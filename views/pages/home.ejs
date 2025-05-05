@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../layouts/header') %>
+
+<body class="d-flex flex-column min-vh-100">
+  <%- include('../layouts/nav') %>
+
+    <!-- Hero Section -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+          <h1 class="display-4">Hi, I'm Aaliyah Hänni</h1>
+          <p class="lead">Creative Web Designer passionate about elegant code & delightful user experiences.</p>
+          <a href="/portfolio" class="btn btn-primary btn-lg mt-3">View My Work</a>
+        </div>
+    </section>
+
+
+    <section class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>I design modern, responsive websites that balance aesthetics and usability. With a strong eye for detail and passion for front-end frameworks, I’m ready to bring your ideas to life.</p>
+            <a href="/about" class="btn btn-outline-secondary mt-2">Learn More</a>
+          </div>
+          <div class="col-md-6">
+            <img src="/myphoto.jpg" class="img-fluid rounded" alt="AaliyahHaenni">
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+          <h2>Skills & Tools</h2>
+          <div class="row mt-4">
+            <div class="col-md-3">HTML5</div>
+            <div class="col-md-3">CSS3 / Bootstrap</div>
+            <div class="col-md-3">JavaScript / Node.js</div>
+            <div class="col-md-3">Figma / Adobe XD</div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="container py-5 text-center">
+        <h2>Want to See More?</h2>
+        <p class="lead">Check out my CV, read my cover letter, or drop me a message.</p>
+        <a href="/cv" class="btn btn-outline-primary m-2">View CV</a>
+        <a href="/cover-letter" class="btn btn-outline-success m-2">Read Cover Letter</a>
+        <a href="/contact" class="btn btn-primary m-2">Contact Me</a>
+        <p>Download ZIP of Documents</p>
+      </section>
+
+
+
+    <%- include('../layouts/footer') %>
+</body>
+</html>

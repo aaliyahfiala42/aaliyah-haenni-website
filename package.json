@@ -1,0 +1,27 @@
+{
+  "name": "aaliyah-haenni-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaliyahfiala42/aaliyah-haenni-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaliyahfiala42/aaliyah-haenni-website/issues"
+  },
+  "homepage": "https://github.com/aaliyahfiala42/aaliyah-haenni-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemailer": "^7.0.2"
+  }
+}
