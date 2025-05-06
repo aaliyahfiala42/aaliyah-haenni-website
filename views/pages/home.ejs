@@ -115,9 +115,15 @@
     <a href="/cover-letter" class="btn btn-outline-success m-2">Read Cover Letter</a>
     <a href="/contact" class="btn btn-outline-secondary m-2">Contact Me</a>
     <br/>
-    <a href="/docs/AaliyahHaenni.zip" download class="btn btn-dark mt-3">
-      <i class="fas fa-download me-2"></i> Download All Documents (ZIP)
-    </a>
+
+    <div class="dropdown">
+      <button class="dropdown-button btn btn-dark mt-3"><i class="fas fa-download me-2"></i>Download All Documents (ZIP)</button>
+      <div class="dropdown-content">
+        <a href="/docs/AaliyahHaenni (EN).zip" download>English</a>
+        <a href="/docs/AaliyahHaenni (DE).zip" download>Deutsch</a>
+      </div>
+    </div>
+
   </section>
 
   <%- include('../layouts/footer') %>
