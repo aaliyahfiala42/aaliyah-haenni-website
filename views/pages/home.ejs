@@ -40,6 +40,41 @@
           </div>
         </div>
       </section>
+
+      <section class="mt-5" id="skills">
+        <h3>Technical Skills</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>HTML / CSS</h6>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 0%">90%</div>
+            </div>
+      
+            <h6>JavaScript / React</h6>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 0%">85%</div>
+            </div>
+      
+            <h6>Node.js / MongoDB</h6>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 0%">80%</div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <h6>Figma / UI Design</h6>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 0%">75%</div>
+            </div>
+      
+            <h6>GitHub / Dev Tools</h6>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 0%">90%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       
       <section class="container py-5 text-center">
         <h2>Want to See More?</h2>
@@ -55,3 +90,20 @@
     <%- include('../layouts/footer') %>
 </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('.progress-bar').forEach(bar => {
+            const targetWidth = bar.textContent;
+            bar.style.width = targetWidth;
+          });
+          observer.disconnect(); // run once
+        }
+      });
+    });
+
+    observer.observe(document.querySelector('#skills'));
+  });
+</script>
