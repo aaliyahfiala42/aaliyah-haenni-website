@@ -1,19 +1,26 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 3000;
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const path = require('path');
 const nodemailer = require('nodemailer');
+
+const port = 3000;
 
 
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.redirect('home'));
-app.get('/home', (req, res) => res.render('pages/home'));
-app.get('/about', (req, res) => res.render('pages/about'));
-app.get('/cv', (req, res) => res.render('pages/cv'));
-app.get('/cover-letter', (req, res) => res.render('pages/cover-letter'));
-app.get('/portfolio', (req, res) => res.render('pages/portfolio'));
-app.get('/contact', (req, res) => res.render('pages/contact'));
+//Routers
+app.get('/', (req, res) => {res.render('pages/home');});
+app.get('/about', (req, res) => {res.render('pages/about');});
+app.get('/cv', (req, res) => {res.render('pages/cv');});
+app.get('/cover-letter', (req, res) => {res.render('pages/cover-letter');});
+app.get('/portfolios', (req, res) => {res.render('pages/portfolios');});
+app.get('/contact', (req, res) => {res.render('pages/contact');});
 
 // Configure Nodemailer with Mailgun
 

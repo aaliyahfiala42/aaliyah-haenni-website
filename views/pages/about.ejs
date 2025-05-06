@@ -6,16 +6,95 @@
 </head>
 <body>
 <%- include('../layouts/nav'); %>
-<main>
+<main class="container py-5">
+    <section class="mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+      <h1 class="mb-3">About Me</h1>
+      <p>
+        I'm a web designer and aspiring full-stack developer based in Switzerland. Over the past
+        three years, I’ve focused on raising my young child while contributing to small non-profits
+        by designing and building websites that solve real-world problems.
+      </p>
+      <p>
+        Prior to moving here, I lived in Seattle and worked in data science — an experience that shaped
+        my problem-solving mindset and refined my attention to detail. I now blend that with my love
+        for clean, user-focused design.
+      </p>
+      <p>
+        I'm currently seeking opportunities to grow professionally in web development and collaborate
+        with creative, mission-driven teams.
+      </p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="/tractor.jpg" alt="Me and my son" class="img-fluid rounded shadow-sm" style="max-height: 350px;" />
+    </div>
+  </div>
 
-
+    </section>
   
-
-
-
-
-
-</main>
+    <section class="row gy-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Technical Skills</h5>
+            <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, WordPress</p>
+            <p><strong>Backend:</strong> Node.js, Django, MongoDB, MySQL, REST APIs</p>
+            <p><strong>Design Tools:</strong> Figma, Canva, Adobe XD (basic)</p>
+            <p><strong>Dev Tools:</strong> GitHub, Azure, Jira, Confluence</p>
+            <p><strong>Other:</strong> UI/UX principles, responsive design, agile development</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card h-100 border-info shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Languages</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">English: Native</li>
+              <li class="list-group-item">German: Conversational (B2.2)</li>
+              <li class="list-group-item">Spanish: Basic (A2)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card h-100 border-success shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Soft Skills</h5>
+            <ul class="list-unstyled mb-0">
+              <li>✔ Communication</li>
+              <li>✔ Empathy</li>
+              <li>✔ Adaptability</li>
+              <li>✔ Detail-oriented</li>
+              <li>✔ Growth mindset</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="mt-5">
+      <h2>Featured Work</h2>
+      <p>Here are a few highlights from my volunteer design projects:</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/images/project1.jpg" class="card-img-top" alt="Non-profit website preview">
+            <div class="card-body">
+              <h5 class="card-title">Local Education NGO</h5>
+              <p class="card-text">Redesigned the organization's website to improve usability and accessibility.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate this block for more projects -->
+      </div>
+    </section>
+  </main>
+  
 <%- include('../layouts/footer'); %>
 </body>
 </html>
