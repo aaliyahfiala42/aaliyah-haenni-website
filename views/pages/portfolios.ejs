@@ -7,19 +7,39 @@
 <body>
   <%- include('../layouts/nav'); %>
 <main>
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Sidebar -->
-      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar vh-100 overflow-auto p-3">
-        <h4>Aaliyah Hänni</h4>
-        <p>Web Development<br>Data Visualization<br>Creative Coding</p>
-        <hr>
-        <p>Email: <a href="mailto:aaliyahhaenni@gmail.com">aaliyahhaenni@gmail.com</a><br>
-        Phone: 76 397 94 12<br>
-        GitHub: <a href="https://github.com/aaliyahfiala42" target="_blank">aaliyahfiala42</a></p>
-        <hr>
-        <h5>Index</h5>
-        <ul class="nav flex-column small">
+  <div class="container py-5">
+    <h1 class="mb-4">Portfolio — Aaliyah Hänni</h1>
+
+    <div class="row align-items-center mb-5">
+      <!-- Personal Info -->
+      <div class="col-md-8">
+        <h2>Aaliyah Hänni</h2>
+        <p>Web Development | Data Visualization | Creative Coding</p>
+        <p><strong>Email:</strong> <a href="mailto:aaliyahhanni@gmail.com">aaliyahhanni@gmail.com</a></p>
+        <p><strong>Phone:</strong> 76 397 94 12</p>
+        <p><strong>Location:</strong> 3048 Wallisellen, Switzerland</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/" target="_blank">Aaliyah Hänni</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/aaliyahfiala42" target="_blank">aaliyahfiala42</a></p>
+      </div>
+      <!-- Profile Photo -->
+      <div class="col-md-4 text-center">
+        <img src="/Logo.PNG" alt="Aaliyah Hänni" class="img-fluid rounded-circle shadow" style="max-width: 180px;">
+      </div>
+    </div>
+    <div class="text-end">
+    <a href="/docs/Portfolio.pdf" download class="btn btn-outline-dark mt-3">
+      <i class="fas fa-file-download me-2"></i> Download Portfolio (PDF)
+    </a>
+    </div>
+
+    
+    <hr>
+
+    <!-- Sidebar -->
+    <div class="row mb-5">
+    <br/>
+        <nav class="col-md-3 d-none d-md-block position-sticky" style="top: 100px;">
+          <ul class="nav flex-column timeline-nav">
           <li class="nav-item"><a class="nav-link" href="#web-dev">Web Development Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#dashboards">Dashboards & Data Viz</a></li>
           <li class="nav-item"><a class="nav-link" href="#creative">Creative Coding & ML</a></li>
@@ -27,8 +47,8 @@
       </nav>
 
       <!-- Main Content -->
-      <div class="col-md-9 ms-sm-auto col-lg-10 px-md-5 py-4 offset-md-3">
-        <section id="web-dev">
+      <div class="col-md-9">
+        <section id="web-dev" class="mb-5">
           <h2>Web Development Projects</h2>
           <article>
             <h5>The Sarah Zuber Scholarship Foundation</h5>
@@ -42,9 +62,9 @@
         </article>
           <article>
             <h5>Cowlitz Youth Soccer Association</h5>
-            <p><strong>Website:</strong> cowlitzyouthsoccer.org<br>
+            <p><strong>Website:</strong> <a href="https://cysa-6675b45a8ab4.herokuapp.com/">cowlitzyouthsoccer.org</a><br>
             <strong>Tools:</strong> Node.js, MongoDB, Express, HTML/CSS<br>
-            <strong>Role:</strong> Built custom backend features for registration.<br>
+            <strong>Role:</strong> Recreated website with improved UI/UX, built custom backend features for document management.<br>
             <strong>Impact:</strong> Enhanced engagement with centralized league info.</p>
             <div class="text-center">
                 <img src="/portfolio/cysa.png" alt="CYSA site screenshot" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">  

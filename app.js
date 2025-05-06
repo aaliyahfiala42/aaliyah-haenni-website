@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require('path');
 const nodemailer = require('nodemailer');
+const mailgunTransport = require("nodemailer-mailgun-transport");
+
 
 const port = 3000;
 
@@ -12,7 +14,8 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded( {extended: true} )); // Parse application/x-www-form-urlencoded.
+app.use(bodyParser.json()); // Parse application/json.
 
 //Routers
 app.get('/', (req, res) => {res.render('pages/home');});
@@ -30,27 +33,21 @@ app.post('/send-email', async (req, res) => {
     if (!name || !email || !message) {
         return res.status(400).json({ error: 'All fields are required!' });
     }
-
     try {
-
     const transporter = nodemailer.createTransport(mailgunTransport({
         auth: {
             api_key: process.env.MAILGUN_API_KEY, // Your Mailgun API key
             domain: process.env.MAILGUN_DOMAIN,   // Your Mailgun domain (sandbox or custom)
         },
     }));
-
     const mailOptions = {
         from: process.env.MAILGUN_EMAIL_USER,
         to: process.env.EMAIL_USER,
         subject: "New Contact Form Submission",
         text: `You have a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
-
         await transporter.sendMail(mailOptions);
-        res.json({ success: true, message: "Message sent successfully! Someone will contact you shortly." });
-
-        res.render('contact');
+        res.json({ success: true, message: "Message sent successfully!" });
     } catch (error) {
         console.error("Error sending email:", error);
         res.status(500).json({ error: "Error sending email", details: error.toString() });

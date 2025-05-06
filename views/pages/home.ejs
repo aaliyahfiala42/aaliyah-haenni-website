@@ -1,114 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <%- include('../layouts/header') %>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-light">
   <%- include('../layouts/nav') %>
 
-    <!-- Hero Section -->
-    <section class="py-5 text-center bg-light">
-        <div class="container">
-          <h1 class="display-4">Hi, I'm Aaliyah Hänni</h1>
-          <p class="lead">Creative Web Designer passionate about elegant code & delightful user experiences.</p>
-          <a href="/portfolios" class="btn btn-primary btn-lg mt-3">View My Work</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="py-5 text-center bg-dark text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Hi, I'm Aaliyah Hänni</h1>
+      <p class="lead">Creative Web Designer passionate about elegant code & delightful user experiences.</p>
+      <a href="/portfolios" class="btn btn-primary btn-lg mt-3">View My Work</a>
+    </div>
+    
+  </section>
 
+  <!-- About -->
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>
+          I design modern, responsive websites that balance aesthetics and usability. After focusing on raising my child in Switzerland for 3 years, I'm now diving into professional web development. Previously based in Seattle with a background in Data Science, I now volunteer building websites for nonprofits. I’m driven by creative problem-solving and clean design.
+        </p>
+        <a href="/about" class="btn btn-outline-dark mt-3">Learn More</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/myphoto.jpg" class="img-fluid rounded shadow" alt="Aaliyah Hänni and son">
+      </div>
+    </div>
+  </section>
 
-    <section class="container py-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>About Me</h2>
-            <p>I design modern, responsive websites that balance aesthetics and usability. With a strong eye for detail and passion for front-end frameworks, I’m ready to bring your ideas to life.</p>
-            <a href="/about" class="btn btn-outline-secondary mt-2">Learn More</a>
-          </div>
-          <div class="col-md-6">
-            <img src="/myphoto.jpg" class="img-fluid rounded" alt="AaliyahHaenni">
-          </div>
-        </div>
-      </section>
+  <!-- Skills & Tools -->
+  <section class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Skills & Tools</h2>
 
-      <section class="bg-dark text-white py-5">
-        <div class="container text-center">
-          <h2>Skills & Tools</h2>
-          <div class="row mt-4">
-            <div class="col-md-3">HTML5</div>
-            <div class="col-md-3">CSS3 / Bootstrap</div>
-            <div class="col-md-3">JavaScript / Node.js</div>
-            <div class="col-md-3">Figma / Adobe XD</div>
-          </div>
-        </div>
-      </section>
+      <!-- Frontend -->
+      <div class="mb-3">
+        <h5 class="text-uppercase">Frontend</h5>
+        <span class="badge bg-secondary m-1">HTML5</span>
+        <span class="badge bg-secondary m-1">CSS3</span>
+        <span class="badge bg-secondary m-1">Bootstrap</span>
+        <span class="badge bg-secondary m-1">JavaScript</span>
+        <span class="badge bg-secondary m-1">React</span>
+        <span class="badge bg-secondary m-1">WordPress</span>
+      </div>
 
-      <section class="mt-5" id="skills">
-        <h3>Technical Skills</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <h6>HTML / CSS</h6>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 0%">90%</div>
-            </div>
-      
-            <h6>JavaScript / React</h6>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 0%">85%</div>
-            </div>
-      
-            <h6>Node.js / MongoDB</h6>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 0%">80%</div>
-            </div>
-          </div>
-      
-          <div class="col-md-6">
-            <h6>Figma / UI Design</h6>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 0%">75%</div>
-            </div>
-      
-            <h6>GitHub / Dev Tools</h6>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-dark" role="progressbar" style="width: 0%">90%</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-      <section class="container py-5 text-center">
-        <h2>Want to See More?</h2>
-        <p class="lead">Check out my CV, read my cover letter, or drop me a message.</p>
-        <a href="/cv" class="btn btn-outline-primary m-2">View CV</a>
-        <a href="/cover-letter" class="btn btn-outline-success m-2">Read Cover Letter</a>
-        <a href="/contact" class="btn btn-primary m-2">Contact Me</a>
-        <br/>
-        <a href="/docs/AaliyahHaenni.zip" download style="
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-        ">
-          Download ZIP of all Documents
-        </a>
-      </section>
-      
+      <!-- Backend -->
+      <div class="mb-3">
+        <h5 class="text-uppercase">Backend</h5>
+        <span class="badge bg-success m-1">Node.js</span>
+        <span class="badge bg-success m-1">Django</span>
+        <span class="badge bg-success m-1">MongoDB</span>
+        <span class="badge bg-success m-1">MySQL</span>
+        <span class="badge bg-success m-1">REST APIs</span>
+      </div>
 
+      <!-- Design Tools -->
+      <div class="mb-3">
+        <h5 class="text-uppercase">Design Tools</h5>
+        <span class="badge bg-info text-dark m-1">Figma</span>
+        <span class="badge bg-info text-dark m-1">Canva</span>
+        <span class="badge bg-info text-dark m-1">Adobe XD</span>
+      </div>
 
+      <!-- Dev Tools -->
+      <div class="mb-3">
+        <h5 class="text-uppercase">Development Tools</h5>
+        <span class="badge bg-warning text-dark m-1">GitHub</span>
+        <span class="badge bg-warning text-dark m-1">Azure</span>
+        <span class="badge bg-warning text-dark m-1">Jira</span>
+        <span class="badge bg-warning text-dark m-1">Confluence</span>
+      </div>
 
-    <%- include('../layouts/footer') %>
+      <!-- Other Skills -->
+      <div class="mb-3">
+        <h5 class="text-uppercase">Other</h5>
+        <span class="badge bg-light text-dark m-1">UI/UX Principles</span>
+        <span class="badge bg-light text-dark m-1">Responsive Design</span>
+        <span class="badge bg-light text-dark m-1">Agile Development</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="container py-5" id="skills">
+    <h3 class="text-center mb-4">Languages</h3>
+    <div class="col-md-8 mx-auto">
+      <h6>English</h6>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">Native</div>
+      </div>
+
+      <h6>German</h6>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 80%">B2.2</div>
+      </div>
+
+      <h6>Spanish</h6>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%">A2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="container py-5 text-center">
+    <h2>Want to See More?</h2>
+    <p class="lead">Check out my CV, read my cover letter, or drop me a message.</p>
+    <a href="/cv" class="btn btn-outline-primary m-2">View CV</a>
+    <a href="/cover-letter" class="btn btn-outline-success m-2">Read Cover Letter</a>
+    <a href="/contact" class="btn btn-outline-secondary m-2">Contact Me</a>
+    <br/>
+    <a href="/docs/AaliyahHaenni.zip" download class="btn btn-dark mt-3">
+      <i class="fas fa-download me-2"></i> Download All Documents (ZIP)
+    </a>
+  </section>
+
+  <%- include('../layouts/footer') %>
+
 </body>
 </html>
+
+<!-- Language bar animation -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           document.querySelectorAll('.progress-bar').forEach(bar => {
-            const targetWidth = bar.textContent;
-            bar.style.width = targetWidth;
+            const width = bar.getAttribute('style').match(/width: (\d+)%/)[1];
+            bar.style.width = '0%';
+            setTimeout(() => bar.style.width = width + '%', 100); // trigger animation
           });
           observer.disconnect(); // run once
         }
