@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 const mailgunTransport = require("nodemailer-mailgun-transport");
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
 
 
 app.set('view engine', 'ejs');

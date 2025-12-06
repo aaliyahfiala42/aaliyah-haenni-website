@@ -1,29 +1,63 @@
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="/">
-        <img src="Logo.PNG" alt="Logo" width="40" height="40" class="me-2">
-        Aaliyah Hänni
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="cv">CV</a></li>
-            <li class="nav-item"><a class="nav-link" href="cover-letter">Cover Letter</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolios">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
-            <li><div id="google_translate_element"></div>
-                <script type="text/javascript">
-                  function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,de' }, 'google_translate_element');
-                  }
-                </script>
-                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </li>
-        </ul>
-        </div>
+<!-- views/layouts/navbar.ejs -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/Logo.PNG" alt="Logo" width="40" height="40" class="me-2 rounded-circle border border-light border-opacity-25">
+      <span class="brand-text">
+        <span class="d-block fw-semibold">Aaliyah Hänni</span>
+        <span class="d-none d-md-block small text-muted">Web Designer &amp; Developer</span>
+      </span>
+    </a>
+
+    <!-- Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cover-letter">Cover Letter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolios">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+
+        <!-- Google Translate -->
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <div id="google_translate_element" class="google-translate-wrapper"></div>
+        </li>
+      </ul>
     </div>
-    </nav>
+  </div>
+
+  <!-- Google Translate scripts (kept inside navbar partial so it works everywhere) -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en', includedLanguages: 'en,de' },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</nav>
