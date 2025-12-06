@@ -2,154 +2,393 @@
 <html lang="en">
 <%- include('../layouts/header') %>
 
+<link rel="stylesheet" href="/css/home.css">
+
 <body class="d-flex flex-column min-vh-100 bg-light">
   <%- include('../layouts/nav') %>
 
-  <!-- Hero Section -->
-  <section class="py-5 text-center bg-dark text-white">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Hi, I'm Aaliyah Hänni</h1>
-      <p class="lead">Creative Web Designer passionate about elegant code & delightful user experiences.</p>
-      <a href="/portfolios" class="btn btn-primary btn-lg mt-3">View My Work</a>
+  <!-- Hero Section with tsParticles background -->
+  <section id="hero" class="hero-section text-white">
+    <div id="tsparticles"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center" data-aos="fade-up">
+          <p class="text-uppercase small opacity-75 mb-2" style="letter-spacing: 0.15em;">
+            Creative Web Designer · Developer · Mom in Tech
+          </p>
+          <h1 class="display-4 fw-bold mb-3">Hi, I'm Aaliyah Hänni</h1>
+          <p class="lead mb-4">
+            I design modern, responsive websites that balance aesthetics and usability.
+            Clean, accessible, human-centered experiences are my thing.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="/portfolios" class="btn btn-primary btn-lg hero-cta">
+              <i class="fas fa-eye me-2"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">
+              <i class="fas fa-paper-plane me-2"></i> Let's Collaborate
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <a href="#about" class="scroll-down-indicator d-none d-md-inline-flex align-items-center">
+          <span>Scroll to explore</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
     </div>
-    
   </section>
 
   <!-- About -->
-  <section class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
+  <section id="about" class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6" data-aos="fade-right">
         <h2>About Me</h2>
         <p>
-          I design modern, responsive websites that balance aesthetics and usability. After focusing on raising my child in Switzerland for 3 years, I'm now diving into professional web development. Previously based in Seattle with a background in Data Science, I now volunteer building websites for nonprofits. I’m driven by creative problem-solving and clean design.
+          I design modern, responsive websites that balance aesthetics and usability. After focusing on raising my
+          child in Switzerland for 3 years, I'm now diving into professional web development. Previously based in
+          Seattle with a background in Data Science, I now volunteer building websites for nonprofits.
+          I’m driven by creative problem-solving and clean design.
         </p>
+
+        <ul class="list-unstyled mt-3">
+          <li class="d-flex align-items-center mb-2">
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span>Volunteer projects for nonprofits and community organizations</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span>Strong focus on accessibility and inclusive UX</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span>Comfortable collaborating across time zones & cultures</span>
+          </li>
+        </ul>
+
         <a href="/about" class="btn btn-outline-dark mt-3">Learn More</a>
-        <br/>
-        <br/>
       </div>
 
-      <div class="col-md-6 text-center">
-        <img src="/myphoto.jpg" class="img-fluid rounded shadow" alt="Aaliyah Hänni and son" style="max-width: 300px;">
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img
+          src="/myphoto.jpg"
+          class="img-fluid rounded shadow"
+          alt="Aaliyah Hänni and son"
+          style="max-width: 320px;"
+        >
       </div>
     </div>
   </section>
 
   <!-- Skills & Tools -->
-  <section class="bg-dark text-white py-5">
+  <section id="skills" class="bg-dark text-white py-5">
     <div class="container text-center">
-      <h2 class="mb-4">Skills & Tools</h2>
+      <h2 class="mb-4" data-aos="fade-up">Skills &amp; Tools</h2>
 
       <!-- Frontend -->
-      <div class="mb-3">
+      <div class="mb-3" data-aos="zoom-in-up">
         <h5 class="text-uppercase">Frontend</h5>
-        <span class="badge bg-secondary m-1">HTML5</span>
-        <span class="badge bg-secondary m-1">CSS3</span>
-        <span class="badge bg-secondary m-1">Bootstrap</span>
-        <span class="badge bg-secondary m-1">JavaScript</span>
-        <span class="badge bg-secondary m-1">React</span>
-        <span class="badge bg-secondary m-1">WordPress</span>
+        <span class="badge bg-secondary m-1 badge-skill">HTML5</span>
+        <span class="badge bg-secondary m-1 badge-skill">CSS3</span>
+        <span class="badge bg-secondary m-1 badge-skill">Bootstrap</span>
+        <span class="badge bg-secondary m-1 badge-skill">JavaScript</span>
+        <span class="badge bg-secondary m-1 badge-skill">React</span>
+        <span class="badge bg-secondary m-1 badge-skill">WordPress</span>
       </div>
 
       <!-- Backend -->
-      <div class="mb-3">
+      <div class="mb-3" data-aos="zoom-in-up" data-aos-delay="100">
         <h5 class="text-uppercase">Backend</h5>
-        <span class="badge bg-success m-1">Node.js</span>
-        <span class="badge bg-success m-1">Django</span>
-        <span class="badge bg-success m-1">MongoDB</span>
-        <span class="badge bg-success m-1">MySQL</span>
-        <span class="badge bg-success m-1">REST APIs</span>
+        <span class="badge bg-success m-1 badge-skill">Node.js</span>
+        <span class="badge bg-success m-1 badge-skill">Django</span>
+        <span class="badge bg-success m-1 badge-skill">MongoDB</span>
+        <span class="badge bg-success m-1 badge-skill">MySQL</span>
+        <span class="badge bg-success m-1 badge-skill">REST APIs</span>
       </div>
 
       <!-- Design Tools -->
-      <div class="mb-3">
+      <div class="mb-3" data-aos="zoom-in-up" data-aos-delay="200">
         <h5 class="text-uppercase">Design Tools</h5>
-        <span class="badge bg-info text-dark m-1">Figma</span>
-        <span class="badge bg-info text-dark m-1">Canva</span>
-        <span class="badge bg-info text-dark m-1">Adobe XD</span>
+        <span class="badge bg-info text-dark m-1 badge-skill">Figma</span>
+        <span class="badge bg-info text-dark m-1 badge-skill">Canva</span>
+        <span class="badge bg-info text-dark m-1 badge-skill">Adobe XD</span>
       </div>
 
       <!-- Dev Tools -->
-      <div class="mb-3">
+      <div class="mb-3" data-aos="zoom-in-up" data-aos-delay="300">
         <h5 class="text-uppercase">Development Tools</h5>
-        <span class="badge bg-warning text-dark m-1">GitHub</span>
-        <span class="badge bg-warning text-dark m-1">Azure</span>
-        <span class="badge bg-warning text-dark m-1">Jira</span>
-        <span class="badge bg-warning text-dark m-1">Confluence</span>
+        <span class="badge bg-warning text-dark m-1 badge-skill">GitHub</span>
+        <span class="badge bg-warning text-dark m-1 badge-skill">Azure</span>
+        <span class="badge bg-warning text-dark m-1 badge-skill">Jira</span>
+        <span class="badge bg-warning text-dark m-1 badge-skill">Confluence</span>
       </div>
 
       <!-- Other Skills -->
-      <div class="mb-3">
+      <div class="mb-3" data-aos="zoom-in-up" data-aos-delay="400">
         <h5 class="text-uppercase">Other</h5>
-        <span class="badge bg-light text-dark m-1">UI/UX Principles</span>
-        <span class="badge bg-light text-dark m-1">Responsive Design</span>
-        <span class="badge bg-light text-dark m-1">Agile Development</span>
+        <span class="badge bg-light text-dark m-1 badge-skill">UI/UX Principles</span>
+        <span class="badge bg-light text-dark m-1 badge-skill">Responsive Design</span>
+        <span class="badge bg-light text-dark m-1 badge-skill">Agile Development</span>
       </div>
     </div>
   </section>
 
   <!-- Languages -->
-  <section  id="skills" style="background-color: lightgray;">
-    <div class="container py-5">
-    <h3 class="text-center mb-4">Languages</h3>
-    <div class="col-md-8 mx-auto">
-      <h6>English</h6>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">Native</div>
-      </div>
+  <section id="languages" style="background-color: lightgray;">
+    <div class="container py-5" data-aos="fade-up">
+      <h3 class="text-center mb-4">Languages</h3>
+      <div class="col-md-8 mx-auto">
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-1">English</h6>
+            <span class="small text-muted">Native</span>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-primary"
+              role="progressbar"
+              data-target-width="100"
+            >
+              Native
+            </div>
+          </div>
+        </div>
 
-      <h6>German</h6>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 80%">B2.2</div>
-      </div>
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-1">German</h6>
+            <span class="small text-muted">B2.2</span>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              data-target-width="80"
+            >
+              B2.2
+            </div>
+          </div>
+        </div>
 
-      <h6>Spanish</h6>
-      <div class="progress mb-3">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%">A2</div>
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <h6 class="mb-1">Spanish</h6>
+            <span class="small text-muted">A2</span>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-warning"
+              role="progressbar"
+              data-target-width="40"
+            >
+              A2
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="container py-5 text-center">
+  <!-- Photo Gallery / Visual Section -->
+  <section id="photos" class="py-5 bg-white">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 data-aos="fade-up">Snapshots from My World</h2>
+          <p class="text-muted" data-aos="fade-up" data-aos-delay="100">
+            A glimpse into my process, my inspirations, and life between Switzerland and Seattle.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 gallery-grid">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="photo-card">
+            <img src="/images/gallery/workspace.jpg" alt="Minimal workspace with design sketches">
+            <div class="photo-overlay">
+              <h5>Design Sessions</h5>
+              <p>Wireframing and prototyping new layouts with Figma and pen &amp; paper.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="photo-card">
+            <img src="/images/gallery/switzerland-outdoor.jpg" alt="Swiss landscape view">
+            <div class="photo-overlay">
+              <h5>Life in Switzerland</h5>
+              <p>Quiet moments outdoors that inspire calm, spacious interfaces.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="photo-card">
+            <img src="/images/gallery/nonprofit.jpg" alt="Nonprofit team collaborating around a laptop">
+            <div class="photo-overlay">
+              <h5>Nonprofit Work</h5>
+              <p>Collaborating with organizations to make their digital presence more impactful.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap modal for full-screen gallery view -->
+      <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark border-0">
+            <div class="modal-body p-0">
+              <img id="photoModalImg" src="" alt="" class="img-fluid w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action / Contact -->
+  <section id="contact" class="container py-5 text-center" data-aos="zoom-in">
     <h2>Want to See More?</h2>
     <p class="lead">Check out my CV, read my cover letter, or drop me a message.</p>
-    <a href="/cv" class="btn btn-outline-primary m-2">View CV</a>
-    <a href="/cover-letter" class="btn btn-outline-success m-2">Read Cover Letter</a>
-    <a href="/contact" class="btn btn-outline-secondary m-2">Contact Me</a>
-    <br/>
+    <a href="/cv" class="btn btn-outline-primary m-2">
+      <i class="fas fa-file-alt me-2"></i> View CV
+    </a>
+    <a href="/cover-letter" class="btn btn-outline-success m-2">
+      <i class="fas fa-file-signature me-2"></i> Read Cover Letter
+    </a>
+    <a href="/contact" class="btn btn-outline-secondary m-2">
+      <i class="fas fa-envelope me-2"></i> Contact Me
+    </a>
+    <br>
 
     <div class="dropdown">
-      <button class="dropdown-button btn btn-dark mt-3"><i class="fas fa-download me-2"></i>Download All Documents (ZIP)</button>
+      <button class="dropdown-button btn btn-dark mt-3">
+        <i class="fas fa-download me-2"></i>Download All Documents (ZIP)
+      </button>
       <div class="dropdown-content">
         <a href="/docs/AaliyahHaenni (EN).zip" download>English</a>
         <a href="/docs/AaliyahHaenni (DE).zip" download>Deutsch</a>
       </div>
     </div>
-
   </section>
 
   <%- include('../layouts/footer') %>
 
-</body>
-</html>
+  <!-- Vendor JS: tsParticles + AOS -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- Language bar animation -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.progress-bar').forEach(bar => {
-            const width = bar.getAttribute('style').match(/width: (\d+)%/)[1];
-            bar.style.width = '0%';
-            setTimeout(() => bar.style.width = width + '%', 100); // trigger animation
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize AOS (scroll animations)
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-cubic"
+      });
+
+      // Language bar animation on scroll (using data-target-width)
+      const languageSection = document.querySelector("#languages");
+      if (languageSection) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              document.querySelectorAll("#languages .progress-bar").forEach(bar => {
+                const targetWidth = bar.dataset.targetWidth || 0;
+                bar.style.width = targetWidth + "%";
+              });
+              observer.disconnect(); // run once
+            }
           });
-          observer.disconnect(); // run once
-        }
+        }, { threshold: 0.3 });
+
+        observer.observe(languageSection);
+      }
+
+      // tsParticles hero background
+      if (window.tsParticles) {
+        tsParticles.load("tsparticles", {
+          fullScreen: { enable: false },
+          background: { color: "transparent" },
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+              onClick: { enable: true, mode: "push" },
+              resize: true
+            },
+            modes: {
+              push: { quantity: 3 },
+              repulse: { distance: 100, duration: 0.4 }
+            }
+          },
+          particles: {
+            color: { value: ["#0d6efd", "#6610f2", "#20c997"] },
+            links: {
+              color: "#6c757d",
+              distance: 120,
+              enable: true,
+              opacity: 0.4,
+              width: 1
+            },
+            collisions: { enable: false },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: { default: "bounce" },
+              random: true,
+              speed: 1.2,
+              straight: false
+            },
+            number: {
+              density: { enable: true, area: 800 },
+              value: 50
+            },
+            opacity: { value: 0.5 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 4 } }
+          },
+          detectRetina: true
+        });
+      }
+
+      // Photo gallery modal using Bootstrap
+      const modalElement = document.getElementById("photoModal");
+      const modalImg = document.getElementById("photoModalImg");
+
+      if (modalElement && modalImg && typeof bootstrap !== "undefined") {
+        document.querySelectorAll(".photo-card").forEach(card => {
+          card.addEventListener("click", () => {
+            const img = card.querySelector("img");
+            if (!img) return;
+            modalImg.src = img.src;
+            modalImg.alt = img.alt || "";
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+          });
+        });
+      }
+
+      // Smooth scroll for internal anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href").substring(1);
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            window.scrollTo({
+              top: targetEl.offsetTop - 70,
+              behavior: "smooth"
+            });
+          }
+        });
       });
     });
-
-    observer.observe(document.querySelector('#skills'));
-  });
-</script>
+  </script>
+</body>
+</html>
