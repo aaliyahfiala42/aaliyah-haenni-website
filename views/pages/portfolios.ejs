@@ -1,182 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <%- include('../layouts/header'); %>
-  <title>Portfolio: Aaliyah Hänni</title>
-</head>
-<body>
-  <%- include('../layouts/nav'); %>
-<main>
-  <div class="container py-5">
-    <h1 class="mb-4">Portfolio: Aaliyah Hänni</h1>
+  <head>
+    <%- include('../layouts/header'); %>
+    <title>Portfolio · Aaliyah Hänni</title>
+  </head>
 
-    <div class="row align-items-center mb-5">
-      <!-- Personal Info -->
-      <div class="col-md-8">
-        <h2>Aaliyah Hänni</h2>
-        <p>Web Development | Data Visualization | Creative Coding</p>
-        <p><strong>Email:</strong> <a href="mailto:aaliyahhanni@gmail.com">aaliyahhanni@gmail.com</a></p>
-        <p><strong>Phone:</strong> 76 397 94 12</p>
-        <p><strong>Location:</strong> 3048 Wallisellen, Switzerland</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/" target="_blank">Aaliyah Hänni</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/aaliyahfiala42" target="_blank">aaliyahfiala42</a></p>
-      </div>
-      <!-- Profile Photo -->
-      <div class="col-md-4 text-center">
-        <img src="/Logo.PNG" alt="Aaliyah Hänni" class="img-fluid rounded-circle shadow" style="max-width: 180px;">
-      </div>
-    </div>
-    <div class="text-end">
-      <div class="dropdown">
-        <button class="dropdown-button btn btn-outline-dark mt-3"><i class="fas fa-download me-2"></i> Download Portfolio (PDF)</button>
-        <div class="dropdown-content">
-          <a href="/docs/Portfolio(EN).pdf" download>English</a>
-          <a href="/docs/Portfolio(DE).pdf" download>Deutsch</a>
-        </div>
-    </div>
-    </div>
+  <body class="page-body">
+    <%- include('../layouts/nav'); %>
 
-    
-    <hr>
+    <main id="page-content">
+      <!-- Intro / Header -->
+      <section class="section section--light">
+        <div class="section__inner portfolio-intro">
+          <div class="portfolio-intro__info" data-aos="fade-right">
+            <p class="small-label">Portfolio</p>
+            <h1 class="section-title">Selected work &amp; experiments</h1>
+            <p class="section-paragraph">
+              I design and build thoughtful, human-centered experiences that sit at the intersection of web
+              development, data visualization and creative coding.
+            </p>
 
-    <!-- Sidebar -->
-    <div class="row mb-5">
-    <br/>
-        <nav class="col-md-3 d-none d-md-block position-sticky" style="top: 100px;">
-          <ul class="nav flex-column timeline-nav">
-          <li class="nav-item"><a class="nav-link" href="#web-dev">Web Development Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#dashboards">Dashboards & Data Viz</a></li>
-          <li class="nav-item"><a class="nav-link" href="#creative">Creative Coding & ML</a></li>
-        </ul>
-      </nav>
-
-      <!-- Main Content -->
-      <div class="col-md-9">
-        <section id="web-dev" class="mb-5">
-          <h2>Web Development Projects</h2>
-          <article>
-            <h5>The Sarah Zuber Scholarship Foundation</h5>
-            <p><strong>Website:</strong> <a href="http://sarahzubermemorial.org" target="_blank">sarahzubermemorial.org</a><br>
-            <strong>Tools:</strong> HTML/CSS, JavaScript, Node.js, Nodemailer<br>
-            <strong>Role:</strong> Designed and built the site structure, deployed full stack.<br>
-            <strong>Impact:</strong> Boosted community awareness and donations through improved design and UX.</p>
-            <div class="text-center">
-                <img src="/portfolio/zuber.png" alt="Sarah Zuber site screenshot" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">
-            </div>
-        </article>
-          <article>
-            <h5>Cowlitz Youth Soccer Association</h5>
-            <p><strong>Website:</strong> <a href="https://cysa-6675b45a8ab4.herokuapp.com/">cowlitzyouthsoccer.org</a><br>
-            <strong>Tools:</strong> Node.js, MongoDB, Express, HTML/CSS<br>
-            <strong>Role:</strong> Recreated website with improved UI/UX, built custom backend features for document management.<br>
-            <strong>Impact:</strong> Enhanced engagement with centralized league info.</p>
-            <div class="text-center">
-                <img src="/portfolio/cysa.png" alt="CYSA site screenshot" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">  
-            </div>
-        </article>
-          <article>
-            <h5>CleanWorksNW</h5>
-            <p><strong>Website:</strong> <a href="https://cleanworksnw.onrender.com/" target="_blank">cleanworksnw.onrender.com</a><br>
-            <strong>Tools:</strong> Node.js, Facebook API<br>
-            <strong>Role:</strong> Developed integrated booking site for local business.</p>
-            <div class="text-center">
-                <img src="/portfolio/cleanworksnw.png" alt="CleanWorksNW site screenshot" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">    
-            </div>
-        </article>
-          <article>
-            <h5>Hand Hammered Knives</h5>
-            <p><strong>Website:</strong> <a href="https://hh-forged.onrender.com/" target="_blank">hh-forged.onrender.com</a><br>
-            <strong>Tools:</strong> Node.js, Stripe, Render<br>
-            <strong>Role:</strong> Created e-commerce showcase for artisan knives.</p>
-            <div class="text-center">
-                <img src="/portfolio/hhforge.png" alt="Hand Hammered Knives site screenshot" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">  
-            </div>  
-        </article>
-          <article>
-            <h5>Kelso Youth Soccer Club</h5>
-            <p><strong>GitHub:</strong> <a href="https://github.com/aaliyahfiala42/Youth-Soccer-Camp-Website" target="_blank">Youth Soccer Website</a><br>
-            <strong>Tools:</strong> Node.js, Express, MongoDB, Stripe, SendGrid<br>
-            <strong>Role:</strong> Full-stack developer for payment-integrated registration platform.</p>
-          </article>
-        </section>
-
-        <section id="dashboards" class="mt-5">
-          <h2>Dashboards & Data Visualizations</h2>
-          <article>
-            <h5>Man-Made Objects in Earth Orbit</h5>
-            <p><strong>Tableau:</strong> <a href="https://public.tableau.com/app/profile/aaliyah.fiala/viz/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits?publish=yes" target="_blank">View Dashboard</a><br>
-            <strong>Tools:</strong> Tableau, Excel<br>
-            <strong>Methods:</strong> Time series, filtering<br>
-            <strong>Impact:</strong> Raised awareness about space debris via visuals.</p>
-            <div class="tableauPlaceholder my-4" id="viz1746527157418" style="width: 100%; max-width: 800px; margin: auto;">
-                <noscript>
-                  <a href="#"><img alt=" " src="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1_rss.png" style="border: none" /></a>
-                </noscript>
-                <object class="tableauViz" style="display: none;">
-                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                  <param name='embed_code_version' value='3' />
-                  <param name='site_root' value='' />
-                  <param name='name' value='Man-MadeObjectsinEarthOrbits&#47;Man-MadeObjectsinEarthOrbits' />
-                  <param name='tabs' value='no' />
-                  <param name='toolbar' value='yes' />
-                  <param name='static_image' value='https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png' />
-                  <param name='animate_transition' value='yes' />
-                  <param name='display_static_image' value='yes' />
-                  <param name='display_spinner' value='yes' />
-                  <param name='display_overlay' value='yes' />
-                  <param name='display_count' value='yes' />
-                  <param name='language' value='en-US' />
-                  <param name='filter' value='publish=yes' />
-                </object>
+            <div class="portfolio-contact">
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">Name</span>
+                <span class="portfolio-contact__value">Aaliyah Hänni</span>
               </div>
-        
-        </article>
-        </section>
-
-        <section id="creative" class="mt-5">
-          <h2>Creative Coding & ML Projects</h2>
-          <article>
-            <h5>AI Fashion: Neural Network Art</h5>
-            <p><strong>GitHub:</strong> <a href="https://github.com/liemluong/Neural_Network_Art" target="_blank">Neural_Network_Art</a><br>
-            <strong>Tools:</strong> Python (PyTorch), Node.js<br>
-            <strong>Methods:</strong> Deep learning, parameter tuning<br>
-            <strong>Impact:</strong> Explored artistic potential of neural networks.</p>
-            <div class="text-center">
-            <img src="/portfolio/aifashion.gif" alt="AI Fashion GIF" class="img-fluid rounded shadow mb-3 text-center" style="width: 600px; max-width: 600px;"> 
-            </div>   
-          </article>
-          <article>
-            <h5>OneCourt: Real-time Sports Data UI</h5>
-            <p><strong>GitHub:</strong> <a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank">OneCourt</a><br>
-            <strong>Tools:</strong> React, Arduino, ML, YOLO<br>
-            <strong>Role:</strong> ML model lead, UI contributor<br>
-            <strong>Impact:</strong> Built accessible sports experience for visually impaired users.</p>
-            <div class="text-center">
-                <img src="/portfolio/onecourt.gif" alt="OneCourt Computer Vision GIF" class="img-fluid rounded shadow mb-3 text-center" style="max-width: 600px;">    
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">Email</span>
+                <a class="portfolio-contact__value" href="mailto:aaliyahhanni@gmail.com">
+                  aaliyahhanni@gmail.com
+                </a>
+              </div>
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">Phone</span>
+                <span class="portfolio-contact__value">+41 76 397 94 12</span>
+              </div>
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">Location</span>
+                <span class="portfolio-contact__value">Bern, Switzerland</span>
+              </div>
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">LinkedIn</span>
+                <a
+                  class="portfolio-contact__value"
+                  href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Aaliyah Hänni
+                </a>
+              </div>
+              <div class="portfolio-contact__line">
+                <span class="portfolio-contact__label">GitHub</span>
+                <a
+                  class="portfolio-contact__value"
+                  href="https://github.com/aaliyahfiala42"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  aaliyahfiala42
+                </a>
+              </div>
             </div>
-        </article>
-        </section>
+
+            <div class="portfolio-download">
+              <button class="button button--ghost dropdown-button">
+                Download portfolio (PDF)
+              </button>
+              <div class="dropdown-menu">
+                <a href="/docs/Portfolio(EN).pdf" download>English</a>
+                <a href="/docs/Portfolio(DE).pdf" download>Deutsch</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-intro__photo" data-aos="fade-left">
+            <div class="portfolio-photo-frame">
+              <img
+                src="/myphoto.jpg"
+                alt="Portrait of Aaliyah Hänni"
+                class="portfolio-photo-frame__img"
+              />
+            </div>
+            <p class="portfolio-intro__tagline">
+              Web development · data-informed design · accessibility-minded experiences.
+            </p>
+          </div>
         </div>
-    </div>
-  </div>
-</main>
+      </section>
 
-  <%- include('../layouts/footer'); %>
+      <!-- Main portfolio layout -->
+      <section class="section section--alt">
+        <div class="section__inner portfolio-layout">
+          <!-- Sticky sidebar nav -->
+          <aside class="portfolio-layout__sidebar" aria-label="Portfolio sections">
+            <div class="portfolio-toc">
+              <p class="portfolio-toc__title">Sections</p>
+              <a href="#web-dev" class="portfolio-toc__link">Web development projects</a>
+              <a href="#dashboards" class="portfolio-toc__link">Dashboards &amp; data viz</a>
+              <a href="#creative" class="portfolio-toc__link">Creative coding &amp; ML</a>
+            </div>
+          </aside>
 
-<script type='text/javascript'>
-    var divElement = document.getElementById('viz1746527157418');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-  
-    // Responsive Width/Height
-    vizElement.style.width = "800px";
-    vizElement.style.height = "80vh"; // adjust as needed (100vh may overflow on mobile)
-  
-    // Load Tableau API script
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
+          <!-- Content -->
+          <div class="portfolio-layout__content">
+            <!-- Web dev -->
+            <section id="web-dev" class="case-section">
+              <header class="case-section__header" data-aos="fade-up">
+                <h2 class="case-section__title" style="color: #fff;">Web development projects</h2>
+                <p class="case-section__summary">
+                  Full-stack and front-end projects for nonprofits, small businesses and youth programs.
+                </p>
+              </header>
 
-</body>
+              <!-- Zuber -->
+              <article class="case-card" data-aos="fade-up">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">The Sarah Zuber Scholarship Foundation</h3>
+                  <p class="case-card__subtitle">Community-focused scholarship foundation website</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>Website</dt>
+                      <dd>
+                        <a href="http://sarahzubermemorial.org" target="_blank" rel="noopener">
+                          sarahzubermemorial.org
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>HTML/CSS · JavaScript · Node.js · Nodemailer</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>Designed and built the site end-to-end, deployed full stack.</dd>
+                    </div>
+                  </dl>
+
+                  <p class="case-card__impact">
+                    Helped the foundation communicate its story, share events and encourage scholarship applications,
+                    leading to clearer donation and application flows.
+                  </p>
+
+                  <a
+                    href="http://sarahzubermemorial.org"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button--outline"
+                  >
+                    Visit site
+                  </a>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/zuber.png"
+                    alt="Screenshot of The Sarah Zuber Scholarship Foundation website"
+                  />
+                </div>
+              </article>
+
+              <!-- CYSA -->
+              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Cowlitz Youth Soccer Association</h3>
+                  <p class="case-card__subtitle">League information hub for families &amp; coaches</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>Website</dt>
+                      <dd>
+                        <a href="https://cysa-6675b45a8ab4.herokuapp.com/" target="_blank" rel="noopener">
+                          cowlitzyouthsoccer.org
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Node.js · Express · MongoDB · custom CMS · HTML/CSS</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>
+                        Rebuilt the site with improved UI/UX and custom document management features for schedules and
+                        policies.
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <p class="case-card__impact">
+                    Improved engagement by centralising league information and making it simple for parents and coaches
+                    to find what they need quickly.
+                  </p>
+
+                  <a
+                    href="https://cysa-6675b45a8ab4.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button--outline"
+                  >
+                    Visit site
+                  </a>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/cysa.png"
+                    alt="Screenshot of Cowlitz Youth Soccer Association website"
+                  />
+                </div>
+              </article>
+
+              <!-- CleanWorksNW -->
+              <article class="case-card" data-aos="fade-up" data-aos-delay="120">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">CleanWorksNW</h3>
+                  <p class="case-card__subtitle">Booking and presence for a local cleaning business</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>Website</dt>
+                      <dd>
+                        <a href="https://cleanworksnw.onrender.com/" target="_blank" rel="noopener">
+                          cleanworksnw.onrender.com
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Node.js · integration with Facebook API</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>Designed and developed a simple booking and marketing site for a local small business.</dd>
+                    </div>
+                  </dl>
+
+                  <a
+                    href="https://cleanworksnw.onrender.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button--outline"
+                  >
+                    Visit site
+                  </a>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/cleanworksnw.png"
+                    alt="Screenshot of CleanWorksNW website"
+                  />
+                </div>
+              </article>
+
+              <!-- Hand Hammered Knives -->
+              <article class="case-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Hand Hammered Knives</h3>
+                  <p class="case-card__subtitle">Artisan e-commerce showcase</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>Website</dt>
+                      <dd>
+                        <a href="https://hh-forged.onrender.com/" target="_blank" rel="noopener">
+                          hh-forged.onrender.com
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Node.js · Express · Stripe · Render</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>Designed and built a product-centric site to showcase handcrafted knives and handle payments.</dd>
+                    </div>
+                  </dl>
+
+                  <a
+                    href="https://hh-forged.onrender.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button--outline"
+                  >
+                    Visit site
+                  </a>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/hhforge.png"
+                    alt="Screenshot of Hand Hammered Knives website"
+                  />
+                </div>
+              </article>
+
+              <!-- Kelso Youth Soccer Club (GitHub only) -->
+              <article class="case-card case-card--compact" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Kelso Youth Soccer Club</h3>
+                  <p class="case-card__subtitle">Payment-integrated registration platform</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>GitHub</dt>
+                      <dd>
+                        <a
+                          href="https://github.com/aaliyahfiala42/Youth-Soccer-Camp-Website"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          Youth Soccer Website
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Node.js · Express · MongoDB · Stripe · SendGrid</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>Full-stack developer for a registration and payments platform.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </section>
+
+            <!-- Dashboards & Data Viz -->
+            <section id="dashboards" class="case-section">
+              <header class="case-section__header" data-aos="fade-up">
+                <h2 class="case-section__title" style="color: #fff;">Dashboards &amp; data visualizations</h2>
+                <p class="case-section__summary">
+                  Visual stories that turn complex datasets into approachable, interactive experiences.
+                </p>
+              </header>
+
+              <article class="case-card case-card--vertical" data-aos="fade-up">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Man-Made Objects in Earth Orbit</h3>
+                  <p class="case-card__subtitle">Exploring space debris with dashboards</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>Tableau</dt>
+                      <dd>
+                        <a
+                          href="https://public.tableau.com/app/profile/aaliyah.fiala/viz/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits?publish=yes"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          View dashboard
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Tableau · Excel</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Methods</dt>
+                      <dd>Time series analysis · filtering · interactive storytelling</dd>
+                    </div>
+                  </dl>
+
+                  <p class="case-card__impact">
+                    Designed a dashboard to raise awareness about space debris by visualizing growth over time and
+                    enabling viewers to explore different object types and orbits.
+                  </p>
+                </div>
+
+                <!-- Tableau embed -->
+                <div class="case-card__embed">
+                  <div class="tableau-embed" id="viz1746527157418">
+                    <noscript>
+                      <a href="#">
+                        <img
+                          alt="Man-Made Objects in Earth Orbits dashboard"
+                          src="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png"
+                        />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param
+                        name="host_url"
+                        value="https%3A%2F%2Fpublic.tableau.com%2F"
+                      />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param
+                        name="name"
+                        value="Man-MadeObjectsinEarthOrbits&#47;Man-MadeObjectsinEarthOrbits"
+                      />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param
+                        name="static_image"
+                        value="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png"
+                      />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <!-- Creative coding & ML -->
+            <section id="creative" class="case-section">
+              <header class="case-section__header" data-aos="fade-up">
+                <h2 class="case-section__title" style="color: #fff;">Creative coding &amp; ML projects</h2>
+                <p class="case-section__summary">
+                  Experiments where machine learning, real-time data and interfaces come together.
+                </p>
+              </header>
+
+              <!-- AI Fashion -->
+              <article class="case-card" data-aos="fade-up">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">AI Fashion: Neural Network Art</h3>
+                  <p class="case-card__subtitle">Collaborative neural network art exploration</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>GitHub</dt>
+                      <dd>
+                        <a
+                          href="https://github.com/liemluong/Neural_Network_Art"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          Neural_Network_Art
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>Python (PyTorch) · Node.js</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Methods</dt>
+                      <dd>Deep learning · model tuning · generative visuals</dd>
+                    </div>
+                  </dl>
+
+                  <p class="case-card__impact">
+                    Experimented with the artistic potential of neural networks, exploring how parameter changes shape
+                    the aesthetics of generated fashion imagery.
+                  </p>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/aifashion.gif"
+                    alt="AI Fashion neural network art animation"
+                  />
+                </div>
+              </article>
+
+              <!-- OneCourt -->
+              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">OneCourt: Real-time sports data UI</h3>
+                  <p class="case-card__subtitle">Accessible sports experiences for visually impaired fans</p>
+
+                  <dl class="case-meta">
+                    <div class="case-meta__row">
+                      <dt>GitHub</dt>
+                      <dd>
+                        <a
+                          href="https://github.com/aaliyahfiala42/OneCourt"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          OneCourt
+                        </a>
+                      </dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Tools</dt>
+                      <dd>React · Arduino · ML · YOLO</dd>
+                    </div>
+                    <div class="case-meta__row">
+                      <dt>Role</dt>
+                      <dd>ML model lead and UI contributor for a real-time sports tracking experience.</dd>
+                    </div>
+                  </dl>
+
+                  <p class="case-card__impact">
+                    Built computer vision and data pipelines to help translate fast-paced sports into accessible,
+                    real-time feedback for visually impaired users.
+                  </p>
+                </div>
+
+                <div class="case-card__image">
+                  <img
+                    src="/portfolio/onecourt.gif"
+                    alt="Computer vision demo for OneCourt sports accessibility project"
+                  />
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('../layouts/footer'); %>
+
+    <!-- Tableau embed script -->
+    <script type="text/javascript">
+      (function () {
+        var divElement = document.getElementById("viz1746527157418");
+        if (!divElement) return;
+        var vizElement = divElement.getElementsByTagName("object")[0];
+        vizElement.style.width = "100%";
+        vizElement.style.height = "70vh";
+
+        var scriptElement = document.createElement("script");
+        scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      })();
+    </script>
+  </body>
 </html>
-  

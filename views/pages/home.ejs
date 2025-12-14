@@ -2,10 +2,7 @@
 <html lang="en">
   <%- include('../layouts/header') %>
 
-  <link rel="stylesheet" href="/css/home.css">
-
   <body class="page-body">
-    <!-- Global nav (keep your existing partial, it will be styled by home.css / your main css) -->
     <%- include('../layouts/nav') %>
 
     <!-- Scroll progress bar -->
@@ -32,7 +29,7 @@
         <div class="section__inner hero">
           <div class="hero__text" data-aos="fade-up">
             <p class="hero__kicker">Creative Web Designer · Developer · Mom in Tech</p>
-            <h1 class="hero__title">Hi, I’m Aaliyah Hänni.</h1>
+            <h1 class="hero__title" style="color: #fff;">Hi, I’m Aaliyah Hänni.</h1>
             <p class="hero__subtitle interactive-tagline">
               I design modern, responsive websites that balance aesthetics and usability. Clean, accessible,
               human-centered experiences are my thing.
@@ -170,7 +167,7 @@
       <section id="journey" data-section-id="journey" class="section section--dark">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
-            <h2 class="section-title section-title--center">My journey in moments</h2>
+            <h2 class="section-title section-title--center" style="color: #fff;">My journey in moments</h2>
             <p class="section-paragraph section-paragraph--muted section-paragraph--center">
               From data science in Seattle to creative web design in Switzerland, here’s how it all connects.
             </p>
@@ -232,7 +229,7 @@
       <section id="skills" data-section-id="skills" class="section section--deep">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
-            <h2 class="section-title section-title--center">Skills &amp; tools</h2>
+            <h2 class="section-title section-title--center" style="color: #fff;">Skills &amp; tools</h2>
             <p class="section-paragraph section-paragraph--muted section-paragraph--center">
               Hover or tap the cards to explore how I work.
             </p>
@@ -352,73 +349,64 @@
         </div>
       </section>
 
-      <!-- PHOTOS / MOODBOARD -->
-      <section id="photos" data-section-id="photos" class="section section--alt">
-        <div class="section__inner">
-          <header class="section-header" data-aos="fade-up">
-            <h2 class="section-title section-title--center">Visuals &amp; moodboard</h2>
-            <p class="section-paragraph section-paragraph--muted section-paragraph--center">
-              Space for real photos, UI shots and the little moments that inspire your work.
-            </p>
-          </header>
 
-          <div class="moodboard-grid">
-            <!-- Left: photo ideas (you can replace backgrounds with your own images) -->
-            <div class="moodboard-column">
-              <article class="idea-card" data-aos="fade-up">
-                <div class="idea-card__image idea-card__image--workspace"></div>
-                <div class="idea-card__body">
-                  <h3>Workspace story</h3>
-                </div>
-              </article>
+<!-- PHOTOS / MOODBOARD -->
+<section id="photos" data-section-id="photos" class="section section--alt">
+  <div class="section__inner">
+    <header class="section-header" data-aos="fade-up">
+      <h2 class="section-title section-title--center" style="color: #fff;">Visuals &amp; moodboard</h2>
+      <p class="section-paragraph section-paragraph--muted section-paragraph--center">
+        Moments that shaped my story: study, mountains, castles and becoming a mom.
+      </p>
+    </header>
 
-              <article class="idea-card" data-aos="fade-up" data-aos-delay="80">
-                <div class="idea-card__image idea-card__image--swiss"></div>
-                <div class="idea-card__body">
-                  <h3>Swiss moments</h3>
-                </div>
-              </article>
-            </div>
-
-            <!-- Right: gallery with lightbox -->
-            <div class="moodboard-column">
-              <div class="gallery-grid">
-                <figure class="gallery-card" data-aos="fade-up">
-                  <img src="/images/gallery/workspace.jpg" alt="Minimal workspace with design sketches" />
-                  <figcaption class="gallery-card__overlay">
-                    <h3>Design sessions</h3>
-                    <p>Wireframing and prototyping layouts with Figma and pen &amp; paper.</p>
-                  </figcaption>
-                </figure>
-
-                <figure class="gallery-card" data-aos="fade-up" data-aos-delay="80">
-                  <img src="/images/gallery/switzerland-outdoor.jpg" alt="Swiss landscape view" />
-                  <figcaption class="gallery-card__overlay">
-                    <h3>Life in Switzerland</h3>
-                    <p>Quiet moments outdoors that inspire calm, spacious interfaces.</p>
-                  </figcaption>
-                </figure>
-
-                <figure class="gallery-card" data-aos="fade-up" data-aos-delay="160">
-                  <img src="/images/gallery/nonprofit.jpg" alt="Nonprofit team collaborating around a laptop" />
-                  <figcaption class="gallery-card__overlay">
-                    <h3>Nonprofit work</h3>
-                    <p>Collaborating with teams to make their digital presence more impactful.</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+    <div class="moodboard-grid">
+      <!-- Left: story tiles / photo ideas using your images as backgrounds -->
+      <div class="moodboard-column">
+        <article class="idea-card" data-aos="fade-up">
+          <div class="idea-card__image idea-card__image--grad"></div>
+          <div class="idea-card__body">
+            <h3>Graduation</h3>
+            <p>Finishing my degree, where my love for data, research and problem-solving really took off.</p>
           </div>
-        </div>
+        </article>
 
-        <!-- Lightbox -->
-        <div id="lightbox" class="lightbox" aria-hidden="true">
-          <div class="lightbox__inner">
-            <button class="lightbox__close" aria-label="Close image">&times;</button>
-            <img id="lightboxImg" src="" alt="" class="lightbox__img" />
+        <article class="idea-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="idea-card__image idea-card__image--mountains"></div>
+          <div class="idea-card__body">
+            <h3>Swiss mountains</h3>
+            <p>Quiet, snowy days in the Alps that inspire calm, spacious interfaces and thoughtful pacing.</p>
           </div>
-        </div>
-      </section>
+        </article>
+      </div>
+
+      <!-- Right: gallery with lightbox using your favorite photos -->
+      <div class="moodboard-column">
+        <figure class="gallery-card" data-aos="fade-up">
+          <img
+            src="/images/thun.jpeg"
+            alt="View from inside Schloss Thun looking out over the town and lake"
+          />
+          <figcaption class="gallery-card__overlay">
+            <h3>Schloss Thun</h3>
+            <p>One of my favourite photos: a framed view from inside the castle in Thun.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Right: gallery with lightbox --> <div class="moodboard-column"> <figure class="gallery-card" data-aos="fade-up" data-aos-delay="80"> <img src="/images/family.jpeg" alt="Swiss landscape view" /> <figcaption class="gallery-card__overlay"> <h3>Life in Switzerland</h3> <p>Enjoying life with family in Switzerland</p> </figcaption> </figure> 
+          <figure class="gallery-card" data-aos="fade-up" data-aos-delay="160"> <img src="\images\onecourt_team.jpeg" alt="Nonprofit team collaborating around a laptop" /> <figcaption class="gallery-card__overlay"> <h3>Nonprofit work</h3> <p>Voulunteering with OneCourt on their Computer Vision accessibility products.</p> </figcaption> </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" aria-label="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="" class="lightbox__img" />
+    </div>
+  </div>
+</section>
 
       <!-- CONTACT / CTA -->
       <section id="contact" data-section-id="contact" class="section section--light">
@@ -430,7 +418,6 @@
 
           <div class="contact__actions">
             <a href="/cv" class="button button--outline">View CV</a>
-            <a href="/cover-letter" class="button button--outline">Read cover letter</a>
             <a href="/contact" class="button button--primary">Contact me</a>
           </div>
 

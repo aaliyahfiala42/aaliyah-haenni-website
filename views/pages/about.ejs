@@ -1,125 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../layouts/header'); %>
-    <title>About</title>
-</head>
-<body>
-<%- include('../layouts/nav'); %>
-<main class="container py-5">
-    <section class="mb-5">
-        <div class="row align-items-center">
-            <div class="col-md-8">
-      <h1 class="mb-3">About Me</h1>
-      <p>
-        I'm a web designer and aspiring full-stack developer based in Switzerland. Over the past
-        three years, I’ve focused on raising my young child while contributing to small non-profits
-        by designing and building websites that solve real-world problems.
-      </p>
-      <p>
-        Prior to moving here, I lived in Seattle and worked in data science, an experience that shaped
-        my problem-solving mindset and refined my attention to detail. I now blend that with my love
-        for clean, user-focused design.
-      </p>
-      <p>
-        I'm currently seeking opportunities to grow professionally in web development and collaborate
-        with creative, mission-driven teams.
-      </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img src="/tractor.jpg" alt="Me and my son" class="img-fluid rounded shadow-sm" style="max-height: 350px;" />
-    </div>
-  </div>
+  <%- include('../layouts/header') %>
 
-    </section>
-  
-    <section class="row gy-4">
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Technical Skills</h5>
-            <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, WordPress</p>
-            <p><strong>Backend:</strong> Node.js, Django, MongoDB, MySQL, REST APIs</p>
-            <p><strong>Design Tools:</strong> Figma, Canva, Adobe XD (basic)</p>
-            <p><strong>Dev Tools:</strong> GitHub, Azure, Jira, Confluence</p>
-            <p><strong>Other:</strong> UI/UX principles, responsive design, agile development</p>
+
+  <body class="page-body">
+    <%- include('../layouts/nav') %>
+
+    <main id="page-content">
+      <!-- Intro section -->
+      <section class="section section--light">
+        <div class="section__inner about-page-intro">
+          <div class="about-page-intro__text" data-aos="fade-right">
+            <p class="section-paragraph section-paragraph--muted small-label">
+              About
+            </p>
+            <h1 class="section-title">A bit more about me</h1>
+
+            <p class="section-paragraph">
+              I’m a web designer and aspiring full-stack developer based in Switzerland. Over the past three years,
+              I’ve focused on raising my young child while contributing to small non-profits by designing and building
+              websites that solve real-world problems.
+            </p>
+            <p class="section-paragraph">
+              Before moving here, I lived in Seattle and worked in data science, these experiences shaped my
+              problem-solving mindset and attention to detail. Now I blend that analytical thinking with my love for
+              clean, user-focused design.
+            </p>
           </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3">
-        <div class="card h-100 border-info shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Languages</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">English: Native</li>
-              <li class="list-group-item">German: Conversational (B2.2)</li>
-              <li class="list-group-item">Spanish: Basic (A2)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3">
-        <div class="card h-100 border-success shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Soft Skills</h5>
-            <ul class="list-unstyled mb-0">
-              <li>✔ Communication</li>
-              <li>✔ Empathy</li>
-              <li>✔ Adaptability</li>
-              <li>✔ Detail-oriented</li>
-              <li>✔ Growth mindset</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="mt-5">
-      <h2>Featured Work</h2>
-      <p>Here are a few highlights from my volunteer design projects:</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="/zuber_logo.svg" class="card-img-top" alt="Non-profit website preview">
-            <div class="card-body">
-              <h5 class="card-title">Scholarship Foundation</h5>
-              <p class="card-text">Created the organization's website to promote the foundation events and scholarship applications.</p>
-              <a href="https://zuber-website-17a5440f0696.herokuapp.com/" class="btn btn-outline-primary btn-sm">View Project</a>
+
+          <div class="about-page-intro__photo" data-aos="fade-left">
+            <div class="about-photo-frame">
+              <img
+                src="/tractor.jpg"
+                alt="Me and my son on a tractor"
+                class="about-photo-frame__img"
+              />
+              <div class="about-photo-frame__badge">
+                <span>Mom in tech</span>
+              </div>
             </div>
+            <p class="about-photo-caption">
+              Balancing parenthood and tech has made me more patient, focused and empathetic in how I design and build
+              products.
+            </p>
           </div>
         </div>
+      </section>
 
+      <!-- Skills & strengths -->
+      <section class="section section--deep">
+        <div class="section__inner">
+          <header class="section-header" data-aos="fade-up">
+            <h2 class="section-title section-title--center" style="color: #fff;">How I work</h2>
+            <p class="section-paragraph section-paragraph--muted section-paragraph--center">
+              A mix of technical skills, languages and soft skills that shape how I approach projects.
+            </p>
+          </header>
 
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="/cysa_logo.jpg" class="card-img-top" alt="Non-profit website preview">
-            <div class="card-body">
-              <h5 class="card-title">Youth Soccer</h5>
-              <p class="card-text">Redesigned the association's website to improve internal and external communication</p>
-              <a href="https://cysa-6675b45a8ab4.herokuapp.com/" class="btn btn-outline-primary btn-sm">View Project</a>
-            </div>
+          <div class="about-info-grid">
+            <!-- Technical skills -->
+            <article class="info-card" data-aos="zoom-in-up">
+              <h3 class="info-card__title">Technical skills</h3>
+              <div class="info-card__body">
+                <p><strong>Frontend</strong></p>
+                <p class="info-card__line">HTML5 · CSS3 · JavaScript · React · WordPress</p>
+
+                <p><strong>Backend</strong></p>
+                <p class="info-card__line">Node.js · Django · MongoDB · MySQL · REST APIs</p>
+
+                <p><strong>Design tools</strong></p>
+                <p class="info-card__line">Figma · Canva · Adobe XD (basic)</p>
+
+                <p><strong>Dev tools</strong></p>
+                <p class="info-card__line">GitHub · Azure · Jira · Confluence</p>
+
+                <p><strong>Other</strong></p>
+                <p class="info-card__line">UI/UX principles · responsive design · agile development</p>
+              </div>
+            </article>
+
+            <!-- Languages -->
+            <article class="info-card info-card--soft" data-aos="zoom-in-up" data-aos-delay="80">
+              <h3 class="info-card__title">Languages</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-list__label">English</span>
+                  <span class="info-list__value">Native</span>
+                </li>
+                <li>
+                  <span class="info-list__label">German</span>
+                  <span class="info-list__value">Conversational (B2.2)</span>
+                </li>
+                <li>
+                  <span class="info-list__label">Spanish</span>
+                  <span class="info-list__value">Basic (A2)</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Soft skills -->
+            <article class="info-card info-card--accent" data-aos="zoom-in-up" data-aos-delay="160">
+              <h3 class="info-card__title">Soft skills</h3>
+              <ul class="info-list info-list--checks">
+                <li>Communication</li>
+                <li>Empathy</li>
+                <li>Adaptability</li>
+                <li>Detail-oriented</li>
+                <li>Growth mindset</li>
+              </ul>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="/onecourt_logo.png" class="card-img-top" alt="Non-profit website preview" style="background-color: black;">
-            <div class="card-body">
-              <h5 class="card-title">Real-time Sports Data UI</h5>
-              <p class="card-text">Developed real-time sports data tracking models, to provide sports accessibility experience for visually impaired users</p>
-              <a href="https://github.com/aaliyahfiala42/OneCourt" class="btn btn-outline-primary btn-sm">View GitHub</a>
-            </div>
+      <!-- Featured work -->
+      <section class="section section--light">
+        <div class="section__inner">
+          <header class="section-header" data-aos="fade-up">
+            <h2 class="section-title section-title--center">Featured work</h2>
+            <p class="section-paragraph section-paragraph--center section-paragraph--muted">
+              A few highlights from my volunteer and self-directed projects.
+            </p>
+          </header>
+
+          <div class="project-grid">
+            <article class="project-card" data-aos="fade-up">
+              <div class="project-card__image">
+                <img src="/zuber_logo.svg" alt="Scholarship Foundation logo" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Scholarship Foundation</h3>
+                <p class="project-card__text">
+                  Created the foundation’s website to promote events, increase trust and make scholarship applications
+                  easier to understand.
+                </p>
+                <a href="https://zuber-website-17a5440f0696.herokuapp.com/" class="button button--outline">
+                  View project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-delay="80">
+              <div class="project-card__image">
+                <img src="/cysa_logo.jpg" alt="Youth soccer association logo" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Youth Soccer</h3>
+                <p class="project-card__text">
+                  Redesigned the association’s website to improve communication with parents, coaches and players,
+                  simplifying navigation and key information.
+                </p>
+                <a href="https://cysa-6675b45a8ab4.herokuapp.com/" class="button button--outline">
+                  View project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-delay="160">
+              <div class="project-card__image project-card__image--dark">
+                <img src="/onecourt_logo.png" alt="OneCourt logo" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Real-time sports data UI</h3>
+                <p class="project-card__text">
+                  Developed models and interfaces for real-time sports data to support accessibility experiences for
+                  visually impaired fans with OneCourt.
+                </p>
+                <a href="https://github.com/aaliyahfiala42/OneCourt" class="button button--outline">
+                  View GitHub
+                </a>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
+    </main>
 
-
-
-      </div>
-    </section>
-  </main>
-  
-<%- include('../layouts/footer'); %>
-</body>
+    <%- include('../layouts/footer') %>
+  </body>
 </html>
