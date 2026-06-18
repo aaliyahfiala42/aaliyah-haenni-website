@@ -9,398 +9,172 @@
     <%- include('../layouts/nav'); %>
 
     <main id="page-content">
-      <!-- Intro / Header -->
       <section class="section section--light">
         <div class="section__inner portfolio-intro">
           <div class="portfolio-intro__info" data-aos="fade-right">
             <p class="small-label">Portfolio</p>
             <h1 class="section-title">Selected work &amp; experiments</h1>
             <p class="section-paragraph">
-              I design and build thoughtful, human-centered experiences that sit at the intersection of web
-              development, data visualization and creative coding.
+              I design and build web platforms, data tools, AI experiments, and accessible digital experiences at the
+              intersection of computer science, data science, UX, and business needs. I’m currently an MSc Computer
+              Science student at Universität Bern and a developer based in Switzerland.
             </p>
 
             <div class="portfolio-contact">
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">Name</span>
-                <span class="portfolio-contact__value">Aaliyah Hänni</span>
-              </div>
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">Email</span>
-                <a class="portfolio-contact__value" href="mailto:aaliyahhanni@gmail.com">
-                  aaliyahhanni@gmail.com
-                </a>
-              </div>
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">Phone</span>
-                <span class="portfolio-contact__value">+41 76 397 94 12</span>
-              </div>
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">Location</span>
-                <span class="portfolio-contact__value">Bern, Switzerland</span>
-              </div>
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">LinkedIn</span>
-                <a
-                  class="portfolio-contact__value"
-                  href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Aaliyah Hänni
-                </a>
-              </div>
-              <div class="portfolio-contact__line">
-                <span class="portfolio-contact__label">GitHub</span>
-                <a
-                  class="portfolio-contact__value"
-                  href="https://github.com/aaliyahfiala42"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  aaliyahfiala42
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio-download">
-              <button class="button button--ghost dropdown-button">
-                Download portfolio (PDF)
-              </button>
-              <div class="dropdown-menu">
-                <a href="/docs/Portfolio(EN).pdf" download>English</a>
-                <a href="/docs/Portfolio(DE).pdf" download>Deutsch</a>
-              </div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">Name</span><span class="portfolio-contact__value">Aaliyah Hänni</span></div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">Email</span><a class="portfolio-contact__value" href="mailto:aaliyahhanni@gmail.com">aaliyahhanni@gmail.com</a></div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">Phone</span><span class="portfolio-contact__value">+41 76 397 94 12</span></div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">Location</span><span class="portfolio-contact__value">Bern, Switzerland</span></div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">Status</span><span class="portfolio-contact__value">MSc Computer Science student · Universität Bern</span></div>
+              <div class="portfolio-contact__line"><span class="portfolio-contact__label">GitHub</span><a class="portfolio-contact__value" href="https://github.com/aaliyahfiala42" target="_blank" rel="noopener">aaliyahfiala42</a></div>
             </div>
           </div>
 
           <div class="portfolio-intro__photo" data-aos="fade-left">
             <div class="portfolio-photo-frame">
-              <img
-                src="/myphoto.jpg"
-                alt="Portrait of Aaliyah Hänni"
-                class="portfolio-photo-frame__img"
-              />
+              <img src="/myphoto.jpg" alt="Portrait of Aaliyah Hänni" class="portfolio-photo-frame__img" />
             </div>
-            <p class="portfolio-intro__tagline">
-              Web development · data-informed design · accessibility-minded experiences.
-            </p>
+            <p class="portfolio-intro__tagline">Web development · data science · AI · Swiss-market digital products.</p>
           </div>
         </div>
       </section>
 
-      <!-- Main portfolio layout -->
       <section class="section section--alt">
         <div class="section__inner portfolio-layout">
-          <!-- Sticky sidebar nav -->
           <aside class="portfolio-layout__sidebar" aria-label="Portfolio sections">
             <div class="portfolio-toc">
               <p class="portfolio-toc__title">Sections</p>
-              <a href="#web-dev" class="portfolio-toc__link">Web development projects</a>
-              <a href="#dashboards" class="portfolio-toc__link">Dashboards &amp; data viz</a>
-              <a href="#creative" class="portfolio-toc__link">Creative coding &amp; ML</a>
+              <a href="#featured" class="portfolio-toc__link">Featured new projects</a>
+              <a href="#web-dev" class="portfolio-toc__link">Web development</a>
+              <a href="#data" class="portfolio-toc__link">Data &amp; dashboards</a>
+              <a href="#ml" class="portfolio-toc__link">AI &amp; accessibility</a>
             </div>
           </aside>
 
-          <!-- Content -->
           <div class="portfolio-layout__content">
-            <!-- Web dev -->
-            <section id="web-dev" class="case-section">
+            <section id="featured" class="case-section">
               <header class="case-section__header" data-aos="fade-up">
-                <h2 class="case-section__title" style="color: #fff;">Web development projects</h2>
-                <p class="case-section__summary">
-                  Full-stack and front-end projects for nonprofits, small businesses and youth programs.
-                </p>
+                <h2 class="case-section__title" style="color: #fff;">Featured new projects</h2>
+                <p class="case-section__summary">Current work that best matches my updated CV: Swiss product design, optimization and full-stack development.</p>
               </header>
 
-              <!-- Zuber -->
-              <article class="case-card" data-aos="fade-up">
+              <article class="case-card case-card--compact case-card--featured" data-aos="fade-up">
                 <div class="case-card__body">
-                  <h3 class="case-card__title">The Sarah Zuber Scholarship Foundation</h3>
-                  <p class="case-card__subtitle">Community-focused scholarship foundation website</p>
-
+                  <h3 class="case-card__title">Swizzzy</h3>
+                  <p class="case-card__subtitle">Swiss business directory · lead designer &amp; developer</p>
                   <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>Website</dt>
-                      <dd>
-                        <a href="http://sarahzubermemorial.org" target="_blank" rel="noopener">
-                          sarahzubermemorial.org
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>HTML/CSS · JavaScript · Node.js · Nodemailer</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>Designed and built the site end-to-end, deployed full stack.</dd>
-                    </div>
+                    <div class="case-meta__row"><dt>Website</dt><dd><a href="https://www.swizzzy.ch/" target="_blank" rel="noopener">swizzzy.ch</a></dd></div>
+                    <div class="case-meta__row"><dt>Focus</dt><dd>Swiss business discovery · profiles · city/category search · local SEO visibility</dd></div>
+                    <div class="case-meta__row"><dt>Role</dt><dd>Product direction, UX/UI, front-end development, platform structure and scalable user experience.</dd></div>
                   </dl>
-
-                  <p class="case-card__impact">
-                    Helped the foundation communicate its story, share events and encourage scholarship applications,
-                    leading to clearer donation and application flows.
-                  </p>
-
-                  <a
-                    href="http://sarahzubermemorial.org"
-                    target="_blank"
-                    rel="noopener"
-                    class="button button--outline"
-                  >
-                    Visit site
-                  </a>
-                </div>
-
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/zuber.png"
-                    alt="Screenshot of The Sarah Zuber Scholarship Foundation website"
-                  />
+                  <p class="case-card__impact">Built around making it easier for users to discover, explore and connect with businesses across Switzerland.</p>
+                  <a href="https://www.swizzzy.ch/" target="_blank" rel="noopener" class="button button--outline">Visit Swizzzy</a>
                 </div>
               </article>
 
-              <!-- CYSA -->
-              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+              <article class="case-card case-card--compact" data-aos="fade-up" data-aos-delay="80">
                 <div class="case-card__body">
-                  <h3 class="case-card__title">Cowlitz Youth Soccer Association</h3>
-                  <p class="case-card__subtitle">League information hub for families &amp; coaches</p>
-
+                  <h3 class="case-card__title">Ant Colony Optimization on Swiss Trails</h3>
+                  <p class="case-card__subtitle">Algorithmic route optimization web application</p>
                   <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>Website</dt>
-                      <dd>
-                        <a href="https://cysa-6675b45a8ab4.herokuapp.com/" target="_blank" rel="noopener">
-                          cowlitzyouthsoccer.org
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Node.js · Express · MongoDB · custom CMS · HTML/CSS</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>
-                        Rebuilt the site with improved UI/UX and custom document management features for schedules and
-                        policies.
-                      </dd>
-                    </div>
+                    <div class="case-meta__row"><dt>Web app</dt><dd><a href="http://ant.aaliyahhaenni.ch/" target="_blank" rel="noopener">ant.aaliyahhaenni.ch</a></dd></div>
+                    <div class="case-meta__row"><dt>Methods</dt><dd>Ant colony optimization · route analysis · Swiss public data/API integration</dd></div>
+                    <div class="case-meta__row"><dt>Role</dt><dd>Designed and implemented the interactive web application and project logic.</dd></div>
                   </dl>
-
-                  <p class="case-card__impact">
-                    Improved engagement by centralising league information and making it simple for parents and coaches
-                    to find what they need quickly.
-                  </p>
-
-                  <a
-                    href="https://cysa-6675b45a8ab4.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="button button--outline"
-                  >
-                    Visit site
-                  </a>
-                </div>
-
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/cysa.png"
-                    alt="Screenshot of Cowlitz Youth Soccer Association website"
-                  />
-                </div>
-              </article>
-
-              <!-- CleanWorksNW -->
-              <article class="case-card" data-aos="fade-up" data-aos-delay="120">
-                <div class="case-card__body">
-                  <h3 class="case-card__title">CleanWorksNW</h3>
-                  <p class="case-card__subtitle">Booking and presence for a local cleaning business</p>
-
-                  <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>Website</dt>
-                      <dd>
-                        <a href="https://cleanworksnw.onrender.com/" target="_blank" rel="noopener">
-                          cleanworksnw.onrender.com
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Node.js · integration with Facebook API</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>Designed and developed a simple booking and marketing site for a local small business.</dd>
-                    </div>
-                  </dl>
-
-                  <a
-                    href="https://cleanworksnw.onrender.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="button button--outline"
-                  >
-                    Visit site
-                  </a>
-                </div>
-
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/cleanworksnw.png"
-                    alt="Screenshot of CleanWorksNW website"
-                  />
-                </div>
-              </article>
-
-              <!-- Hand Hammered Knives -->
-              <article class="case-card" data-aos="fade-up" data-aos-delay="160">
-                <div class="case-card__body">
-                  <h3 class="case-card__title">Hand Hammered Knives</h3>
-                  <p class="case-card__subtitle">Artisan e-commerce showcase</p>
-
-                  <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>Website</dt>
-                      <dd>
-                        <a href="https://hh-forged.onrender.com/" target="_blank" rel="noopener">
-                          hh-forged.onrender.com
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Node.js · Express · Stripe · Render</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>Designed and built a product-centric site to showcase handcrafted knives and handle payments.</dd>
-                    </div>
-                  </dl>
-
-                  <a
-                    href="https://hh-forged.onrender.com/"
-                    target="_blank"
-                    rel="noopener"
-                    class="button button--outline"
-                  >
-                    Visit site
-                  </a>
-                </div>
-
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/hhforge.png"
-                    alt="Screenshot of Hand Hammered Knives website"
-                  />
-                </div>
-              </article>
-
-              <!-- Kelso Youth Soccer Club (GitHub only) -->
-              <article class="case-card case-card--compact" data-aos="fade-up" data-aos-delay="200">
-                <div class="case-card__body">
-                  <h3 class="case-card__title">Kelso Youth Soccer Club</h3>
-                  <p class="case-card__subtitle">Payment-integrated registration platform</p>
-
-                  <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>GitHub</dt>
-                      <dd>
-                        <a
-                          href="https://github.com/aaliyahfiala42/Youth-Soccer-Camp-Website"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          Youth Soccer Website
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Node.js · Express · MongoDB · Stripe · SendGrid</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>Full-stack developer for a registration and payments platform.</dd>
-                    </div>
-                  </dl>
+                  <p class="case-card__impact">Connects algorithmic optimization concepts with real Swiss geographic and trail route data.</p>
+                  <a href="http://ant.aaliyahhaenni.ch/" target="_blank" rel="noopener" class="button button--outline">Open web app</a>
                 </div>
               </article>
             </section>
 
-            <!-- Dashboards & Data Viz -->
-            <section id="dashboards" class="case-section">
+            <section id="web-dev" class="case-section">
               <header class="case-section__header" data-aos="fade-up">
-                <h2 class="case-section__title" style="color: #fff;">Dashboards &amp; data visualizations</h2>
-                <p class="case-section__summary">
-                  Visual stories that turn complex datasets into approachable, interactive experiences.
-                </p>
+                <h2 class="case-section__title" style="color: #fff;">Web development projects</h2>
+                <p class="case-section__summary">Full-stack and front-end projects for nonprofits, small businesses and community organizations.</p>
+              </header>
+
+              <article class="case-card" data-aos="fade-up">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Ridah’s Soulutions client work</h3>
+                  <p class="case-card__subtitle">60+ websites, digital assets and integrations</p>
+                  <dl class="case-meta">
+                    <div class="case-meta__row"><dt>Tools</dt><dd>Node.js · WordPress · Hostpoint · Cloudflare · Adobe Suite · Google tools</dd></div>
+                    <div class="case-meta__row"><dt>Work</dt><dd>Websites, e-commerce, API integrations, payment checkouts, SEO, mobile assets and client IT support.</dd></div>
+                  </dl>
+                  <p class="case-card__impact">Lead development and design across a broad client portfolio, translating practical business needs into reliable digital experiences.</p>
+                </div>
+                <div class="case-card__image case-card__image--placeholder"><i class="fas fa-code"></i></div>
+              </article>
+
+              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">The Sarah Zuber Scholarship Foundation</h3>
+                  <p class="case-card__subtitle">Community-focused scholarship foundation website</p>
+                  <dl class="case-meta">
+                    <div class="case-meta__row"><dt>Website</dt><dd><a href="https://sarahzubermemorial.org/" target="_blank" rel="noopener">sarahzubermemorial.org</a></dd></div>
+                    <div class="case-meta__row"><dt>Tools</dt><dd>HTML/CSS · JavaScript · Node.js · Forms</dd></div>
+                    <div class="case-meta__row"><dt>Role</dt><dd>Designed and built the site end-to-end for clearer foundation communication.</dd></div>
+                  </dl>
+                  <a href="https://sarahzubermemorial.org/" target="_blank" rel="noopener" class="button button--outline">Visit site</a>
+                </div>
+                <div class="case-card__image"><img src="/portfolio/zuber.png" alt="Screenshot of The Sarah Zuber Scholarship Foundation website" /></div>
+              </article>
+
+              <article class="case-card" data-aos="fade-up" data-aos-delay="120">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Cowlitz Youth Soccer Association</h3>
+                  <p class="case-card__subtitle">League information hub for families &amp; coaches</p>
+                  <dl class="case-meta">
+                    <div class="case-meta__row"><dt>Website</dt><dd><a href="https://cowlitzyouthsoccer.org/" target="_blank" rel="noopener">cowlitzyouthsoccer.org</a></dd></div>
+                    <div class="case-meta__row"><dt>Tools</dt><dd>Node.js · Express · custom content/document workflows · HTML/CSS</dd></div>
+                    <div class="case-meta__row"><dt>Role</dt><dd>Improved UI/UX and simplified navigation for parents, players and coaches.</dd></div>
+                  </dl>
+                  <a href="https://cowlitzyouthsoccer.org/" target="_blank" rel="noopener" class="button button--outline">Visit site</a>
+                </div>
+                <div class="case-card__image"><img src="/portfolio/cysa.png" alt="Screenshot of Cowlitz Youth Soccer Association website" /></div>
+              </article>
+
+              <article class="case-card case-card--compact" data-aos="fade-up" data-aos-delay="160">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Additional community and small-business sites</h3>
+                  <p class="case-card__subtitle">Accessibility, local communication and business presence</p>
+                  <div class="cv-link-row">
+                    <a href="https://curiouslittlefrog.com/" target="_blank" rel="noopener">curiouslittlefrog.com</a>
+                    <a href="https://www.pdxcaa.com/" target="_blank" rel="noopener">pdxcaa.com</a>
+                    <a href="https://cleanworksnw.onrender.com/" target="_blank" rel="noopener">CleanWorksNW</a>
+                    <a href="https://hh-forged.onrender.com/" target="_blank" rel="noopener">Hand Hammered Knives</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section id="data" class="case-section">
+              <header class="case-section__header" data-aos="fade-up">
+                <h2 class="case-section__title" style="color: #fff;">Data &amp; dashboards</h2>
+                <p class="case-section__summary">Data visualization, reporting and decision-support work from academic and business contexts.</p>
               </header>
 
               <article class="case-card case-card--vertical" data-aos="fade-up">
                 <div class="case-card__body">
                   <h3 class="case-card__title">Man-Made Objects in Earth Orbit</h3>
                   <p class="case-card__subtitle">Exploring space debris with dashboards</p>
-
                   <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>Tableau</dt>
-                      <dd>
-                        <a
-                          href="https://public.tableau.com/app/profile/aaliyah.fiala/viz/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits?publish=yes"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          View dashboard
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Tableau · Excel</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Methods</dt>
-                      <dd>Time series analysis · filtering · interactive storytelling</dd>
-                    </div>
+                    <div class="case-meta__row"><dt>Tools</dt><dd>Tableau · Excel</dd></div>
+                    <div class="case-meta__row"><dt>Methods</dt><dd>Time series analysis · filtering · interactive storytelling</dd></div>
                   </dl>
-
-                  <p class="case-card__impact">
-                    Designed a dashboard to raise awareness about space debris by visualizing growth over time and
-                    enabling viewers to explore different object types and orbits.
-                  </p>
+                  <p class="case-card__impact">Designed a dashboard to visualize growth over time and help viewers explore different object types and orbits.</p>
                 </div>
-
-                <!-- Tableau embed -->
                 <div class="case-card__embed">
                   <div class="tableau-embed" id="viz1746527157418">
-                    <noscript>
-                      <a href="#">
-                        <img
-                          alt="Man-Made Objects in Earth Orbits dashboard"
-                          src="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png"
-                        />
-                      </a>
-                    </noscript>
+                    <noscript><a href="#"><img alt="Man-Made Objects in Earth Orbits dashboard" src="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png" /></a></noscript>
                     <object class="tableauViz" style="display:none;">
-                      <param
-                        name="host_url"
-                        value="https%3A%2F%2Fpublic.tableau.com%2F"
-                      />
+                      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
                       <param name="embed_code_version" value="3" />
                       <param name="site_root" value="" />
-                      <param
-                        name="name"
-                        value="Man-MadeObjectsinEarthOrbits&#47;Man-MadeObjectsinEarthOrbits"
-                      />
+                      <param name="name" value="Man-MadeObjectsinEarthOrbits&#47;Man-MadeObjectsinEarthOrbits" />
                       <param name="tabs" value="no" />
                       <param name="toolbar" value="yes" />
-                      <param
-                        name="static_image"
-                        value="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png"
-                      />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Ma/Man-MadeObjectsinEarthOrbits/Man-MadeObjectsinEarthOrbits/1.png" />
                       <param name="animate_transition" value="yes" />
                       <param name="display_static_image" value="yes" />
                       <param name="display_spinner" value="yes" />
@@ -414,98 +188,47 @@
               </article>
             </section>
 
-            <!-- Creative coding & ML -->
-            <section id="creative" class="case-section">
+            <section id="ml" class="case-section">
               <header class="case-section__header" data-aos="fade-up">
-                <h2 class="case-section__title" style="color: #fff;">Creative coding &amp; ML projects</h2>
-                <p class="case-section__summary">
-                  Experiments where machine learning, real-time data and interfaces come together.
-                </p>
+                <h2 class="case-section__title" style="color: #fff;">AI &amp; accessibility projects</h2>
+                <p class="case-section__summary">Machine learning, creative AI and accessible interaction experiments.</p>
               </header>
 
-              <!-- AI Fashion -->
               <article class="case-card" data-aos="fade-up">
-                <div class="case-card__body">
-                  <h3 class="case-card__title">AI Fashion: Neural Network Art</h3>
-                  <p class="case-card__subtitle">Collaborative neural network art exploration</p>
-
-                  <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>GitHub</dt>
-                      <dd>
-                        <a
-                          href="https://github.com/liemluong/Neural_Network_Art"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          Neural_Network_Art
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>Python (PyTorch) · Node.js</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Methods</dt>
-                      <dd>Deep learning · model tuning · generative visuals</dd>
-                    </div>
-                  </dl>
-
-                  <p class="case-card__impact">
-                    Experimented with the artistic potential of neural networks, exploring how parameter changes shape
-                    the aesthetics of generated fashion imagery.
-                  </p>
-                </div>
-
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/aifashion.gif"
-                    alt="AI Fashion neural network art animation"
-                  />
-                </div>
-              </article>
-
-              <!-- OneCourt -->
-              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
                 <div class="case-card__body">
                   <h3 class="case-card__title">OneCourt: Real-time sports data UI</h3>
                   <p class="case-card__subtitle">Accessible sports experiences for visually impaired fans</p>
-
                   <dl class="case-meta">
-                    <div class="case-meta__row">
-                      <dt>GitHub</dt>
-                      <dd>
-                        <a
-                          href="https://github.com/aaliyahfiala42/OneCourt"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          OneCourt
-                        </a>
-                      </dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Tools</dt>
-                      <dd>React · Arduino · ML · YOLO</dd>
-                    </div>
-                    <div class="case-meta__row">
-                      <dt>Role</dt>
-                      <dd>ML model lead and UI contributor for a real-time sports tracking experience.</dd>
-                    </div>
+                    <div class="case-meta__row"><dt>GitHub</dt><dd><a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank" rel="noopener">OneCourt</a></dd></div>
+                    <div class="case-meta__row"><dt>Tools</dt><dd>React · Arduino · ML · YOLO</dd></div>
+                    <div class="case-meta__row"><dt>Role</dt><dd>Data lead and ML contributor for real-time sports tracking and haptic translation.</dd></div>
                   </dl>
-
-                  <p class="case-card__impact">
-                    Built computer vision and data pipelines to help translate fast-paced sports into accessible,
-                    real-time feedback for visually impaired users.
-                  </p>
+                  <p class="case-card__impact">Helped translate fast-paced sports into accessible, real-time feedback for visually impaired users.</p>
+                  <a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank" rel="noopener" class="button button--outline">View GitHub</a>
                 </div>
+                <div class="case-card__image"><img src="/portfolio/onecourt.gif" alt="Computer vision demo for OneCourt sports accessibility project" /></div>
+              </article>
 
-                <div class="case-card__image">
-                  <img
-                    src="/portfolio/onecourt.gif"
-                    alt="Computer vision demo for OneCourt sports accessibility project"
-                  />
+              <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">AI Fashion: GAN textile patterns</h3>
+                  <p class="case-card__subtitle">AI-assisted textile pattern generation and fashion preview platform</p>
+                  <dl class="case-meta">
+                    <div class="case-meta__row"><dt>GitHub</dt><dd><a href="https://github.com/liemluong/Neural_Network_Art" target="_blank" rel="noopener">Neural_Network_Art</a></dd></div>
+                    <div class="case-meta__row"><dt>Tools</dt><dd>Python · PyTorch/TensorFlow concepts · Node.js</dd></div>
+                    <div class="case-meta__row"><dt>Methods</dt><dd>GANs · object detection · generated visual patterns</dd></div>
+                  </dl>
+                  <p class="case-card__impact">Explored how AI-generated patterns can inspire fashion items in physical and virtual worlds.</p>
+                  <a href="https://github.com/liemluong/Neural_Network_Art" target="_blank" rel="noopener" class="button button--outline">View GitHub</a>
+                </div>
+                <div class="case-card__image"><img src="/portfolio/aifashion.gif" alt="AI Fashion neural network art animation" /></div>
+              </article>
+
+              <article class="case-card case-card--compact" data-aos="fade-up" data-aos-delay="160">
+                <div class="case-card__body">
+                  <h3 class="case-card__title">Brain Tumor Recognition</h3>
+                  <p class="case-card__subtitle">CNN-based MRI brain scan classification web application</p>
+                  <p class="case-card__impact">Built a TensorFlow/Keras convolutional neural network with a web upload flow to classify 2D MRI images as tumorous or non-tumorous.</p>
                 </div>
               </article>
             </section>
@@ -516,19 +239,27 @@
 
     <%- include('../layouts/footer'); %>
 
-    <!-- Tableau embed script -->
-    <script type="text/javascript">
-      (function () {
-        var divElement = document.getElementById("viz1746527157418");
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".portfolio-toc__link").forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            const target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 90, behavior: "smooth" });
+          });
+        });
+
+        const divElement = document.getElementById("viz1746527157418");
         if (!divElement) return;
-        var vizElement = divElement.getElementsByTagName("object")[0];
+        const vizElement = divElement.getElementsByTagName("object")[0];
+        if (!vizElement) return;
         vizElement.style.width = "100%";
         vizElement.style.height = "70vh";
-
-        var scriptElement = document.createElement("script");
+        const scriptElement = document.createElement("script");
         scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      })();
+      });
     </script>
   </body>
 </html>

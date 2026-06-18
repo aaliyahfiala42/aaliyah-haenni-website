@@ -1,174 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../layouts/header') %>
-
+  <head>
+    <%- include('../layouts/header'); %>
+    <title>About · Aaliyah Hänni</title>
+  </head>
 
   <body class="page-body">
-    <%- include('../layouts/nav') %>
+    <%- include('../layouts/nav'); %>
 
     <main id="page-content">
-      <!-- Intro section -->
       <section class="section section--light">
         <div class="section__inner about-page-intro">
           <div class="about-page-intro__text" data-aos="fade-right">
-            <p class="section-paragraph section-paragraph--muted small-label">
-              About
-            </p>
+            <p class="section-paragraph section-paragraph--muted small-label">About</p>
             <h1 class="section-title">A bit more about me</h1>
 
             <p class="section-paragraph">
-              I’m a web designer and aspiring full-stack developer based in Switzerland. Over the past three years,
-              I’ve focused on raising my young child while contributing to small non-profits by designing and building
-              websites that solve real-world problems.
+              I’m a Computer Science MSc student at Universität Bern, web developer, data scientist, and IT business
+              analyst based in Switzerland. My path brings together mathematics, software, data, design, and practical
+              business systems, which helps me move comfortably between technical details and user needs.
             </p>
             <p class="section-paragraph">
-              Before moving here, I lived in Seattle and worked in data science, these experiences shaped my
-              problem-solving mindset and attention to detail. Now I blend that analytical thinking with my love for
-              clean, user-focused design.
+              Before Switzerland, I worked in the Seattle area in data science and IT business analysis, building
+              dashboards, requirements, reports, internal software workflows, and machine learning prototypes. Today, I
+              apply that foundation to web platforms, Swiss-market digital products, e-commerce websites, SEO, API
+              integrations, and clean UX.
             </p>
           </div>
 
           <div class="about-page-intro__photo" data-aos="fade-left">
             <div class="about-photo-frame">
-              <img
-                src="/tractor.jpg"
-                alt="Me and my son on a tractor"
-                class="about-photo-frame__img"
-              />
-              <div class="about-photo-frame__badge">
-                <span>Mom in tech</span>
-              </div>
+              <img src="/tractor.jpg" alt="Aaliyah Hänni and family in Switzerland" class="about-photo-frame__img" />
+              <div class="about-photo-frame__badge"><span>Student &amp; builder in Switzerland</span></div>
             </div>
             <p class="about-photo-caption">
-              Balancing parenthood and tech has made me more patient, focused and empathetic in how I design and build
-              products.
+              Living and studying in Switzerland shapes how I think about accessible, multilingual and locally useful
+              digital products.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Skills & strengths -->
       <section class="section section--deep">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
             <h2 class="section-title section-title--center" style="color: #fff;">How I work</h2>
             <p class="section-paragraph section-paragraph--muted section-paragraph--center">
-              A mix of technical skills, languages and soft skills that shape how I approach projects.
+              A mix of technical depth, design judgement, communication, and implementation experience.
             </p>
           </header>
 
           <div class="about-info-grid">
-            <!-- Technical skills -->
             <article class="info-card" data-aos="zoom-in-up">
               <h3 class="info-card__title">Technical skills</h3>
               <div class="info-card__body">
-                <p><strong>Frontend</strong></p>
-                <p class="info-card__line">HTML5 · CSS3 · JavaScript · React · WordPress</p>
-
-                <p><strong>Backend</strong></p>
-                <p class="info-card__line">Node.js · Django · MongoDB · MySQL · REST APIs</p>
-
-                <p><strong>Design tools</strong></p>
-                <p class="info-card__line">Figma · Canva · Adobe XD (basic)</p>
-
-                <p><strong>Dev tools</strong></p>
-                <p class="info-card__line">GitHub · Azure · Jira · Confluence</p>
-
-                <p><strong>Other</strong></p>
-                <p class="info-card__line">UI/UX principles · responsive design · agile development</p>
+                <p><strong>Frontend &amp; Web</strong></p>
+                <p class="info-card__line">HTML · CSS · JavaScript · WordPress · Node.js · Responsive design</p>
+                <p><strong>Backend &amp; Systems</strong></p>
+                <p class="info-card__line">Express · APIs · Webhooks · Authentication · Databases · Cron jobs</p>
+                <p><strong>Data &amp; AI</strong></p>
+                <p class="info-card__line">Python · R · SQL · Tableau · Machine learning · CNNs · GANs</p>
+                <p><strong>Design &amp; Marketing</strong></p>
+                <p class="info-card__line">Adobe Suite · SEO · Google Search Console · Google Ads · Content assets</p>
               </div>
             </article>
 
-            <!-- Languages -->
             <article class="info-card info-card--soft" data-aos="zoom-in-up" data-aos-delay="80">
               <h3 class="info-card__title">Languages</h3>
               <ul class="info-list">
-                <li>
-                  <span class="info-list__label">English</span>
-                  <span class="info-list__value">Native</span>
-                </li>
-                <li>
-                  <span class="info-list__label">German</span>
-                  <span class="info-list__value">Conversational (B2.2)</span>
-                </li>
-                <li>
-                  <span class="info-list__label">Spanish</span>
-                  <span class="info-list__value">Basic (A2)</span>
-                </li>
+                <li><span class="info-list__label">English</span><span class="info-list__value">Native</span></li>
+                <li><span class="info-list__label">German</span><span class="info-list__value">B2.2</span></li>
+                <li><span class="info-list__label">Spanish</span><span class="info-list__value">A2</span></li>
               </ul>
             </article>
 
-            <!-- Soft skills -->
             <article class="info-card info-card--accent" data-aos="zoom-in-up" data-aos-delay="160">
-              <h3 class="info-card__title">Soft skills</h3>
+              <h3 class="info-card__title">Strengths</h3>
               <ul class="info-list info-list--checks">
-                <li>Communication</li>
-                <li>Empathy</li>
-                <li>Adaptability</li>
-                <li>Detail-oriented</li>
-                <li>Growth mindset</li>
+                <li>Technical translation between users and developers</li>
+                <li>Clean, calm and accessible interfaces</li>
+                <li>Requirements gathering and documentation</li>
+                <li>Data-informed decisions</li>
+                <li>Client communication and troubleshooting</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Featured work -->
       <section class="section section--light">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
             <h2 class="section-title section-title--center">Featured work</h2>
             <p class="section-paragraph section-paragraph--center section-paragraph--muted">
-              A few highlights from my volunteer and self-directed projects.
+              A few projects that show my current direction across Swiss business discovery, optimization, accessibility and community websites.
             </p>
           </header>
 
-          <div class="project-grid">
+          <div class="project-grid project-grid--four">
             <article class="project-card" data-aos="fade-up">
-              <div class="project-card__image">
-                <img src="/zuber_logo.svg" alt="Scholarship Foundation logo" />
-              </div>
               <div class="project-card__body">
-                <h3 class="project-card__title">Scholarship Foundation</h3>
-                <p class="project-card__text">
-                  Created the foundation’s website to promote events, increase trust and make scholarship applications
-                  easier to understand.
-                </p>
-                <a href="https://zuber-website-17a5440f0696.herokuapp.com/" class="button button--outline">
-                  View project
-                </a>
+                <h3 class="project-card__title">Swizzzy</h3>
+                <p class="project-card__text">Lead design and development for a Swiss business directory focused on discovery, profiles and local SEO visibility.</p>
+                <a href="https://www.swizzzy.ch/" target="_blank" rel="noopener" class="button button--outline">View project</a>
               </div>
             </article>
-
             <article class="project-card" data-aos="fade-up" data-aos-delay="80">
-              <div class="project-card__image">
-                <img src="/cysa_logo.jpg" alt="Youth soccer association logo" />
-              </div>
               <div class="project-card__body">
-                <h3 class="project-card__title">Youth Soccer</h3>
-                <p class="project-card__text">
-                  Redesigned the association’s website to improve communication with parents, coaches and players,
-                  simplifying navigation and key information.
-                </p>
-                <a href="https://cysa-6675b45a8ab4.herokuapp.com/" class="button button--outline">
-                  View project
-                </a>
+                <h3 class="project-card__title">Ant Colony Swiss Trails</h3>
+                <p class="project-card__text">Optimization web app exploring ant colony algorithms on Swiss trail route data.</p>
+                <a href="http://ant.aaliyahhaenni.ch/" target="_blank" rel="noopener" class="button button--outline">Open web app</a>
               </div>
             </article>
-
             <article class="project-card" data-aos="fade-up" data-aos-delay="160">
-              <div class="project-card__image project-card__image--dark">
-                <img src="/onecourt_logo.png" alt="OneCourt logo" />
-              </div>
               <div class="project-card__body">
-                <h3 class="project-card__title">Real-time sports data UI</h3>
-                <p class="project-card__text">
-                  Developed models and interfaces for real-time sports data to support accessibility experiences for
-                  visually impaired fans with OneCourt.
-                </p>
-                <a href="https://github.com/aaliyahfiala42/OneCourt" class="button button--outline">
-                  View GitHub
-                </a>
+                <h3 class="project-card__title">OneCourt</h3>
+                <p class="project-card__text">Machine learning and real-time haptic sports data work for accessibility-focused sports experiences.</p>
+                <a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank" rel="noopener" class="button button--outline">View GitHub</a>
+              </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="240">
+              <div class="project-card__body">
+                <h3 class="project-card__title">Community websites</h3>
+                <p class="project-card__text">Web support for nonprofits, youth programs, memorial projects and community organizations.</p>
+                <a href="/portfolios" class="button button--outline">Browse portfolio</a>
               </div>
             </article>
           </div>
@@ -176,6 +131,6 @@
       </section>
     </main>
 
-    <%- include('../layouts/footer') %>
+    <%- include('../layouts/footer'); %>
   </body>
 </html>

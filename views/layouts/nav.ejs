@@ -1,16 +1,20 @@
-<!-- views/layouts/navbar.ejs -->
-<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark custom-navbar">
+<!-- views/layouts/nav.ejs -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark custom-navbar" aria-label="Primary navigation">
   <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="/Logo.PNG" alt="Logo" width="40" height="40" class="me-2 rounded-circle border border-light border-opacity-25">
+    <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Aaliyah Hänni home">
+      <img
+        src="/Logo.PNG"
+        alt="Aaliyah Hänni logo"
+        width="42"
+        height="42"
+        class="me-2 rounded-circle border border-light border-opacity-25"
+      />
       <span class="brand-text">
         <span class="d-block fw-semibold">Aaliyah Hänni</span>
-        <span class="d-none d-md-block small ">Web Designer &amp; Developer</span>
+        <span class="d-none d-md-block small">CS MSc Student · Developer</span>
       </span>
     </a>
 
-    <!-- Toggler -->
     <button
       class="navbar-toggler"
       type="button"
@@ -23,23 +27,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cv">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolios">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-
-        <!-- Google Translate -->
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="/portfolios">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
         <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
           <div id="google_translate_element" class="google-translate-wrapper"></div>
         </li>
@@ -47,12 +40,11 @@
     </div>
   </div>
 
-  <!-- Google Translate scripts (kept inside navbar partial so it works everywhere) -->
-  <script type="text/javascript">
+  <script>
     function googleTranslateElementInit() {
       new google.translate.TranslateElement(
-        { pageLanguage: 'en', includedLanguages: 'en,de' },
-        'google_translate_element'
+        { pageLanguage: "en", includedLanguages: "en,de" },
+        "google_translate_element"
       );
     }
   </script>

@@ -1,98 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../layouts/header') %>
+  <head>
+    <%- include('../layouts/header'); %>
+    <title>Aaliyah Hänni · Computer Science MSc Student & Developer</title>
+  </head>
 
   <body class="page-body">
-    <%- include('../layouts/nav') %>
+    <%- include('../layouts/nav'); %>
 
-    <!-- Scroll progress bar -->
     <div id="scroll-progress"></div>
-
-    <!-- tsParticles full-page background -->
     <div id="tsparticles"></div>
 
-    <!-- Side dot navigation (one-page experience) -->
     <nav class="side-nav" aria-label="Section navigation">
       <button class="side-nav__dot side-nav__dot--active" data-target="hero" aria-label="Hero"></button>
       <button class="side-nav__dot" data-target="about" aria-label="About"></button>
       <button class="side-nav__dot" data-target="journey" aria-label="Journey"></button>
       <button class="side-nav__dot" data-target="skills" aria-label="Skills"></button>
+      <button class="side-nav__dot" data-target="projects" aria-label="Projects"></button>
       <button class="side-nav__dot" data-target="languages" aria-label="Languages"></button>
-      <button class="side-nav__dot" data-target="photos" aria-label="Photos & Moodboard"></button>
       <button class="side-nav__dot" data-target="contact" aria-label="Contact"></button>
     </nav>
 
-    <!-- Main content -->
     <main id="page-content">
-      <!-- HERO -->
       <section id="hero" data-section-id="hero" class="section section--hero">
         <div class="section__inner hero">
           <div class="hero__text" data-aos="fade-up">
-            <p class="hero__kicker">Creative Web Designer · Developer · Mom in Tech</p>
+            <p class="hero__kicker">Computer Science MSc Student · Developer · Data Scientist</p>
             <h1 class="hero__title" style="color: #fff;">Hi, I’m Aaliyah Hänni.</h1>
             <p class="hero__subtitle interactive-tagline">
-              I design modern, responsive websites that balance aesthetics and usability. Clean, accessible,
-              human-centered experiences are my thing.
+              I’m studying Computer Science at Universität Bern while designing and building web platforms, data products,
+              AI experiments, and accessible digital experiences in Switzerland.
             </p>
 
-            <div class="pill-row tagline-toggle">
+            <div class="pill-row tagline-toggle" aria-label="Profile focus switcher">
               <button
                 class="pill pill--active"
-                data-message="I design modern, responsive websites that balance aesthetics and usability. Clean, accessible, human-centered experiences are my thing."
+                data-message="I’m studying Computer Science at Universität Bern while designing and building web platforms, data products, AI experiments, and accessible digital experiences in Switzerland."
               >
-                Designer
+                Student
               </button>
               <button
                 class="pill"
-                data-message="I love turning ideas into reliable, well-structured web apps using Node.js, React and clean, maintainable code."
+                data-message="I build Node.js, WordPress, API-connected and e-commerce websites with clean UX, responsive layouts, SEO foundations and practical security."
               >
                 Developer
               </button>
               <button
                 class="pill"
-                data-message="I balance parenthood and tech, bringing empathy, focus and flexibility into every project I work on."
+                data-message="My data science background helps me turn messy datasets into models, dashboards, reports and decisions people can actually use."
               >
-                Mom in Tech
+                Data
+              </button>
+              <button
+                class="pill"
+                data-message="I care about products that feel clear, calm and accessible, especially for small businesses, nonprofits and community-focused teams."
+              >
+                UX
               </button>
             </div>
 
-            <div class="hero__actions">
-              <a href="/portfolios" class="button button--primary">View my work</a>
-              <a href="#contact" class="button button--ghost">Let’s collaborate</a>
-            </div>
-
-            <div class="hero__status-row">
-              <div class="status-chip status-chip--green">Open to opportunities</div>
-              <div class="status-chip status-chip--outline">Remote · Hybrid · Zurich region</div>
-            </div>
           </div>
 
           <div class="hero__visual" data-aos="fade-left">
             <div class="hero-photo">
               <div class="hero-photo__frame">
                 <img src="/myphoto.jpg" alt="Aaliyah Hänni" class="hero-photo__img" />
-                <div class="hero-photo__badge">
-                  <span>Based in Switzerland</span>
-                </div>
-              </div>
-
-              <div class="hero-photo__notes">
-                <p class="hero-photo__note-title">Experience snapshot</p>
-                <ul>
-                  <li>Web design &amp; data-informed UX</li>
-                  <li>Nonprofit &amp; community projects</li>
-                  <li>Background in Data Science</li>
-                </ul>
+                <div class="hero-photo__badge"><span>Based in Switzerland</span></div>
               </div>
             </div>
           </div>
         </div>
 
         <footer class="hero__footer">
-          <a href="#about" class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <span class="scroll-indicator__icon">▾</span>
-          </a>
 
           <div class="particles-toggle">
             <span class="particles-toggle__label">Particles mood:</span>
@@ -103,33 +82,25 @@
         </footer>
       </section>
 
-      <!-- ABOUT -->
       <section id="about" data-section-id="about" class="section section--light">
         <div class="section__inner about">
           <div class="about__text" data-aos="fade-right">
             <h2 class="section-title">About me</h2>
             <p class="section-paragraph">
-              I design modern, responsive websites that balance aesthetics and usability. After focusing on raising my
-              child in Switzerland for 3 years, I’m now diving into professional web development. Previously based in
-              Seattle with a background in Data Science, I now volunteer building websites for nonprofits.
+              I combine computer science, data science, mathematics, design, and business analysis to build products
+              that are technically solid and easy for people to use. My current chapter is rooted in Switzerland, where
+              I’m pursuing an MSc in Computer Science at Universität Bern and building digital products for Swiss and
+              international clients.
             </p>
             <p class="section-paragraph">
-              I’m driven by creative problem-solving and clean design that feels calm, intentional and welcoming.
+              My work spans full-stack websites, WordPress and Node.js platforms, e-commerce integrations, dashboards,
+              machine learning prototypes, SEO, server setup, and accessible user experiences.
             </p>
 
             <ul class="icon-list">
-              <li>
-                <span class="icon-list__icon">✓</span>
-                <span>Volunteer projects for nonprofits and community organizations</span>
-              </li>
-              <li>
-                <span class="icon-list__icon">✓</span>
-                <span>Strong focus on accessibility and inclusive UX</span>
-              </li>
-              <li>
-                <span class="icon-list__icon">✓</span>
-                <span>Comfortable collaborating across time zones &amp; cultures</span>
-              </li>
+              <li><span>Computer Science MSc student at Universität Bern</span></li>
+              <li><span>Lead designer and developer for Swizzzy, a Swiss business directory</span></li>
+              <li><span>Experienced in web development, data science, IT analysis, UX and client support</span></li>
             </ul>
 
             <a href="/about" class="button button--outline">More about my story</a>
@@ -138,38 +109,28 @@
           <div class="about__visual" data-aos="fade-left">
             <div class="about-cards">
               <article class="about-card">
-                <h3>What I love</h3>
-                <p>
-                  Calm, spacious layouts, clear hierarchy, and experiences that feel effortless for people who don’t
-                  speak “tech”.
-                </p>
+                <h3>What I build</h3>
+                <p>Web platforms, APIs, e-commerce flows, dashboards, ML prototypes and polished client-facing websites.</p>
               </article>
               <article class="about-card">
                 <h3>How I work</h3>
-                <p>
-                  Listen, sketch, prototype, test. I value honest feedback, small iterations and shipping meaningful
-                  improvements regularly.
-                </p>
+                <p>Listen first, clarify goals, prototype quickly, ship useful improvements, and keep the user experience simple.</p>
               </article>
               <article class="about-card about-card--accent">
-                <h3>Who I design for</h3>
-                <p>
-                  Nonprofits, small teams, and people who care deeply about what they’re building.
-                  
-                </p>
+                <h3>What drives me</h3>
+                <p>Technology that makes information easier to find, decisions easier to make and experiences more accessible.</p>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- JOURNEY -->
       <section id="journey" data-section-id="journey" class="section section--dark">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
             <h2 class="section-title section-title--center" style="color: #fff;">My journey in moments</h2>
             <p class="section-paragraph section-paragraph--muted section-paragraph--center">
-              From data science in Seattle to creative web design in Switzerland, here’s how it all connects.
+              From mathematics and data science in the U.S. to computer science and web products in Switzerland.
             </p>
           </header>
 
@@ -177,36 +138,27 @@
             <div class="timeline__item" data-aos="fade-right">
               <div class="timeline__dot"></div>
               <div class="timeline__content">
-                <p class="timeline__label">Before Switzerland</p>
-                <h3 class="timeline__title">Data Science &amp; Analytics</h3>
-                <p>
-                  Built a strong analytical foundation working with data, experimentation and evidence-based decisions.
-                  That mindset now shapes how I design and validate user experiences.
-                </p>
+                <p class="timeline__label">Foundation</p>
+                <h3 class="timeline__title">Mathematics, Statistics &amp; Computer Science</h3>
+                <p>Built a strong quantitative base through a BSc in Mathematics with minors in Computer Science and Statistics.</p>
               </div>
             </div>
 
             <div class="timeline__item" data-aos="fade-left">
               <div class="timeline__dot"></div>
               <div class="timeline__content">
-                <p class="timeline__label">Move to Switzerland</p>
-                <h3 class="timeline__title">Focusing on Family</h3>
-                <p>
-                  Took time to raise my child and adapt to a new culture and language. It sharpened my empathy and
-                  patience.
-                </p>
+                <p class="timeline__label">Seattle</p>
+                <h3 class="timeline__title">Data Science &amp; IT Business Analysis</h3>
+                <p>Completed an MSc in Data Science and worked on dashboards, reports, requirements, internal software and machine learning projects.</p>
               </div>
             </div>
 
             <div class="timeline__item" data-aos="fade-right">
               <div class="timeline__dot"></div>
               <div class="timeline__content">
-                <p class="timeline__label">Recent Years</p>
-                <h3 class="timeline__title">Web Design &amp; Nonprofits</h3>
-                <p>
-                  Volunteering with nonprofits, redesigning their sites to improve clarity, trust and donation flows.
-                  Here I fell in love with UI/UX and thoughtful front-end development.
-                </p>
+                <p class="timeline__label">Switzerland</p>
+                <h3 class="timeline__title">Web Development &amp; Digital Products</h3>
+                <p>Now building websites, business platforms, payment integrations, client assets, SEO foundations and Swiss-market digital experiences.</p>
               </div>
             </div>
 
@@ -214,278 +166,138 @@
               <div class="timeline__dot"></div>
               <div class="timeline__content">
                 <p class="timeline__label">Now</p>
-                <h3 class="timeline__title">Professional Web Development</h3>
-                <p>
-                  Combining data, design and development to create experiences that feel calm, intentional and
-                  delightfully usable across devices.
-                </p>
+                <h3 class="timeline__title">MSc Computer Science at Universität Bern</h3>
+                <p>Continuing to deepen my computer science foundation while applying it to practical software, UX and data problems.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS -->
       <section id="skills" data-section-id="skills" class="section section--deep">
         <div class="section__inner">
           <header class="section-header" data-aos="fade-up">
             <h2 class="section-title section-title--center" style="color: #fff;">Skills &amp; tools</h2>
             <p class="section-paragraph section-paragraph--muted section-paragraph--center">
-              Hover or tap the cards to explore how I work.
+              A mix of development, data, design and business analysis skills.
             </p>
           </header>
 
           <div class="skills-grid">
             <article class="skill-card" data-aos="zoom-in-up">
-              <div class="skill-card__front">
-                <h3>Frontend</h3>
-                <p>Interfaces that feel clean, fast and intuitive.</p>
-              </div>
-              <div class="skill-card__back">
-                <div class="chip-row">
-                  <span class="chip">HTML5</span>
-                  <span class="chip">CSS3</span>
-                  <span class="chip">JavaScript</span>
-                  <span class="chip">React</span>
-                  <span class="chip">Responsive design</span>
-                </div>
-              </div>
+              <div class="skill-card__front"><h3>Web</h3><p>Websites and applications that are structured, responsive and maintainable.</p></div>
+              <div class="skill-card__back"><div class="chip-row"><span class="chip">Node.js</span><span class="chip">WordPress</span><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span><span class="chip">APIs</span><span class="chip">E-commerce</span></div></div>
             </article>
-
             <article class="skill-card" data-aos="zoom-in-up" data-aos-delay="80">
-              <div class="skill-card__front">
-                <h3>Backend</h3>
-                <p>Solid foundations that keep everything running smoothly.</p>
-              </div>
-              <div class="skill-card__back">
-                <div class="chip-row">
-                  <span class="chip chip--green">Node.js</span>
-                  <span class="chip chip--green">Django</span>
-                  <span class="chip chip--green">MongoDB</span>
-                  <span class="chip chip--green">MySQL</span>
-                  <span class="chip chip--green">REST APIs</span>
-                </div>
-              </div>
+              <div class="skill-card__front"><h3>Data</h3><p>Analytics, dashboards and models that support clear decisions.</p></div>
+              <div class="skill-card__back"><div class="chip-row"><span class="chip chip--green">Python</span><span class="chip chip--green">R</span><span class="chip chip--green">SQL</span><span class="chip chip--green">Tableau</span><span class="chip chip--green">ML</span><span class="chip chip--green">Statistics</span></div></div>
             </article>
-
             <article class="skill-card" data-aos="zoom-in-up" data-aos-delay="160">
-              <div class="skill-card__front">
-                <h3>Design</h3>
-                <p>Thoughtful, intentional layouts with a human touch.</p>
-              </div>
-              <div class="skill-card__back">
-                <div class="chip-row">
-                  <span class="chip chip--soft">Figma</span>
-                  <span class="chip chip--soft">Canva</span>
-                  <span class="chip chip--soft">Adobe XD</span>
-                  <span class="chip chip--soft">UI/UX principles</span>
-                </div>
-              </div>
+              <div class="skill-card__front"><h3>Design</h3><p>Clean layouts, brand assets and user flows with practical business goals.</p></div>
+              <div class="skill-card__back"><div class="chip-row"><span class="chip chip--soft">UX/UI</span><span class="chip chip--soft">Adobe Suite</span><span class="chip chip--soft">SEO</span><span class="chip chip--soft">Content</span><span class="chip chip--soft">Responsive design</span></div></div>
             </article>
-
             <article class="skill-card" data-aos="zoom-in-up" data-aos-delay="240">
-              <div class="skill-card__front">
-                <h3>Workflow</h3>
-                <p>Organised, communicative and calm under pressure.</p>
-              </div>
-              <div class="skill-card__back">
-                <div class="chip-row">
-                  <span class="chip chip--amber">Git &amp; GitHub</span>
-                  <span class="chip chip--amber">Agile</span>
-                  <span class="chip chip--amber">Jira</span>
-                  <span class="chip chip--amber">Confluence</span>
-                </div>
-              </div>
+              <div class="skill-card__front"><h3>Systems</h3><p>Requirements, training, infrastructure setup and client support.</p></div>
+              <div class="skill-card__back"><div class="chip-row"><span class="chip chip--amber">Jira</span><span class="chip chip--amber">Confluence</span><span class="chip chip--amber">Hostpoint</span><span class="chip chip--amber">Cloudflare</span><span class="chip chip--amber">Google Ads</span></div></div>
             </article>
-          </div>
-
-          <div class="projects-teaser" data-aos="fade-up">
-            <div>
-              <h3 class="projects-teaser__title">See these skills in action</h3>
-              <p class="projects-teaser__text">
-                Explore selected projects where I improved clarity, confidence and conversions through design.
-              </p>
-            </div>
-            <a href="/portfolios" class="button button--outline-light">Browse portfolio</a>
           </div>
         </div>
       </section>
 
-      <!-- LANGUAGES -->
+      <section id="projects" data-section-id="projects" class="section section--light">
+        <div class="section__inner">
+          <header class="section-header" data-aos="fade-up">
+            <h2 class="section-title section-title--center">Featured projects</h2>
+            <p class="section-paragraph section-paragraph--center section-paragraph--muted">
+              New and selected work across web development, optimization, AI and accessibility.
+            </p>
+          </header>
+
+          <div class="project-grid">
+            <article class="project-card" data-aos="fade-up">
+              <div class="project-card__body">
+                <h3 class="project-card__title">Swizzzy</h3>
+                <p class="project-card__text">Swiss business directory focused on local business discovery, strong profiles, city/category search and clean user journeys.</p>
+                <a href="https://www.swizzzy.ch/" target="_blank" rel="noopener" class="button button--outline">Visit Swizzzy</a>
+              </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="80">
+              <div class="project-card__body">
+                <h3 class="project-card__title">Ant Colony Swiss Trails</h3>
+                <p class="project-card__text">Optimization web app applying ant colony algorithms to Swiss trail route data and interactive route exploration.</p>
+                <a href="http://ant.aaliyahhaenni.ch/" target="_blank" rel="noopener" class="button button--outline">Open web app</a>
+              </div>
+            </article>
+            <article class="project-card" data-aos="fade-up" data-aos-delay="160">
+              <div class="project-card__body">
+                <h3 class="project-card__title">OneCourt</h3>
+                <p class="project-card__text">Machine learning and haptic translation for real-time, accessible sports experiences for visually impaired fans.</p>
+                <a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank" rel="noopener" class="button button--outline">View GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="languages" data-section-id="languages" class="section section--light">
         <div class="section__inner" data-aos="fade-up">
           <h2 class="section-title section-title--center">Languages</h2>
           <div class="lang-grid">
-            <div class="lang-item">
-              <div class="lang-item__header">
-                <span>English</span>
-                <span class="lang-item__level">Native</span>
-              </div>
-              <div class="lang-bar">
-                <div class="lang-bar__fill" data-target-width="100">Native</div>
-              </div>
-            </div>
-
-            <div class="lang-item">
-              <div class="lang-item__header">
-                <span>German</span>
-                <span class="lang-item__level">B2.2</span>
-              </div>
-              <div class="lang-bar">
-                <div class="lang-bar__fill lang-bar__fill--green" data-target-width="80">B2.2</div>
-              </div>
-            </div>
-
-            <div class="lang-item">
-              <div class="lang-item__header">
-                <span>Spanish</span>
-                <span class="lang-item__level">A2</span>
-              </div>
-              <div class="lang-bar">
-                <div class="lang-bar__fill lang-bar__fill--amber" data-target-width="40">A2</div>
-              </div>
-            </div>
+            <div class="lang-item"><div class="lang-item__header"><span>English</span><span class="lang-item__level">Native</span></div><div class="lang-bar"><div class="lang-bar__fill" data-target-width="100">Native</div></div></div>
+            <div class="lang-item"><div class="lang-item__header"><span>German</span><span class="lang-item__level">B2.2</span></div><div class="lang-bar"><div class="lang-bar__fill lang-bar__fill--green" data-target-width="80">B2.2</div></div></div>
+            <div class="lang-item"><div class="lang-item__header"><span>Spanish</span><span class="lang-item__level">A2</span></div><div class="lang-bar"><div class="lang-bar__fill lang-bar__fill--amber" data-target-width="40">A2</div></div></div>
           </div>
         </div>
       </section>
 
-
-<!-- PHOTOS / MOODBOARD -->
-<section id="photos" data-section-id="photos" class="section section--alt">
-  <div class="section__inner">
-    <header class="section-header" data-aos="fade-up">
-      <h2 class="section-title section-title--center" style="color: #fff;">Visuals &amp; moodboard</h2>
-      <p class="section-paragraph section-paragraph--muted section-paragraph--center">
-        Moments that shaped my story: study, mountains, castles and becoming a mom.
-      </p>
-    </header>
-
-    <div class="moodboard-grid">
-      <!-- Left: story tiles / photo ideas using your images as backgrounds -->
-      <div class="moodboard-column">
-        <article class="idea-card" data-aos="fade-up">
-          <div class="idea-card__image idea-card__image--grad"></div>
-          <div class="idea-card__body">
-            <h3>Graduation</h3>
-            <p>Finishing my degree, where my love for data, research and problem-solving really took off.</p>
-          </div>
-        </article>
-
-        <article class="idea-card" data-aos="fade-up" data-aos-delay="80">
-          <div class="idea-card__image idea-card__image--mountains"></div>
-          <div class="idea-card__body">
-            <h3>Swiss mountains</h3>
-            <p>Quiet, snowy days in the Alps that inspire calm, spacious interfaces and thoughtful pacing.</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Right: gallery with lightbox using your favorite photos -->
-      <div class="moodboard-column">
-        <figure class="gallery-card" data-aos="fade-up">
-          <img
-            src="/images/thun.jpeg"
-            alt="View from inside Schloss Thun looking out over the town and lake"
-          />
-          <figcaption class="gallery-card__overlay">
-            <h3>Schloss Thun</h3>
-            <p>One of my favourite photos: a framed view from inside the castle in Thun.</p>
-          </figcaption>
-        </figure>
-
-        <!-- Right: gallery with lightbox --> <div class="moodboard-column"> <figure class="gallery-card" data-aos="fade-up" data-aos-delay="80"> <img src="/images/family.jpeg" alt="Swiss landscape view" /> <figcaption class="gallery-card__overlay"> <h3>Life in Switzerland</h3> <p>Enjoying life with family in Switzerland</p> </figcaption> </figure> 
-          <figure class="gallery-card" data-aos="fade-up" data-aos-delay="160"> <img src="\images\onecourt_team.jpeg" alt="Nonprofit team collaborating around a laptop" /> <figcaption class="gallery-card__overlay"> <h3>Nonprofit work</h3> <p>Voulunteering with OneCourt on their Computer Vision accessibility products.</p> </figcaption> </figure>
-      </div>
-    </div>
-  </div>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox__inner">
-      <button class="lightbox__close" aria-label="Close image">&times;</button>
-      <img id="lightboxImg" src="" alt="" class="lightbox__img" />
-    </div>
-  </div>
-</section>
-
-      <!-- CONTACT / CTA -->
       <section id="contact" data-section-id="contact" class="section section--light">
         <div class="section__inner contact" data-aos="zoom-in">
-          <h2 class="section-title section-title--center">Let’s build something thoughtful</h2>
+          <h2 class="section-title section-title--center">Let’s build something useful</h2>
           <p class="section-paragraph section-paragraph--center">
-            Want to see more work, collaborate on a project, or just say hi? I’d love to hear from you.
+            View my CV, browse projects, or contact me about web, data, UX, and software opportunities in Switzerland.
           </p>
-
           <div class="contact__actions">
             <a href="/cv" class="button button--outline">View CV</a>
             <a href="/contact" class="button button--primary">Contact me</a>
-          </div>
-
-          <div class="contact__downloads">
-            <button class="button button--ghost dropdown-button">
-              Download all documents (ZIP)
-            </button>
-            <div class="dropdown-menu">
-              <a href="/docs/AaliyahHaenni (EN).zip" download>English</a>
-              <a href="/docs/AaliyahHaenni (DE).zip" download>Deutsch</a>
-            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <%- include('../layouts/footer') %>
+    <%- include('../layouts/footer'); %>
 
-    <!-- tsParticles + AOS -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // AOS
-        AOS.init({
-          duration: 800,
-          once: true,
-          easing: "ease-out-cubic"
-        });
-
-        // Scroll progress
         const scrollProgress = document.getElementById("scroll-progress");
         function updateScrollProgress() {
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           const docHeight = document.documentElement.scrollHeight - window.innerHeight;
           const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-          scrollProgress.style.width = progress + "%";
+          if (scrollProgress) scrollProgress.style.width = progress + "%";
         }
         window.addEventListener("scroll", updateScrollProgress);
         updateScrollProgress();
 
-        // Languages progress animation
         const languageSection = document.getElementById("languages");
         if (languageSection) {
-          const observer = new IntersectionObserver(
-            entries => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  document.querySelectorAll(".lang-bar__fill").forEach(bar => {
-                    const targetWidth = bar.dataset.targetWidth || 0;
-                    bar.style.width = targetWidth + "%";
-                  });
-                  observer.disconnect();
-                }
-              });
-            },
-            { threshold: 0.3 }
-          );
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                document.querySelectorAll(".lang-bar__fill").forEach(bar => {
+                  bar.style.width = (bar.dataset.targetWidth || 0) + "%";
+                });
+                observer.disconnect();
+              }
+            });
+          }, { threshold: 0.3 });
           observer.observe(languageSection);
         }
 
-        // Interactive tagline switcher
         const taglineEl = document.querySelector(".interactive-tagline");
-        const tagPills = document.querySelectorAll(".tagline-toggle .pill");
-        tagPills.forEach(pill => {
+        document.querySelectorAll(".tagline-toggle .pill").forEach(pill => {
           pill.addEventListener("click", () => {
-            tagPills.forEach(p => p.classList.remove("pill--active"));
+            document.querySelectorAll(".tagline-toggle .pill").forEach(p => p.classList.remove("pill--active"));
             pill.classList.add("pill--active");
             const msg = pill.getAttribute("data-message");
             if (msg && taglineEl) {
@@ -500,130 +312,11 @@
           });
         });
 
-        // tsParticles config with themes
-        function getParticlesConfig(theme) {
-          const base = {
-            fullScreen: { enable: true, zIndex: -1 },
-            background: { color: "#050816" },
-            fpsLimit: 60,
-            interactivity: {
-              events: {
-                onHover: { enable: true, mode: "grab" },
-                onClick: { enable: true, mode: "push" },
-                resize: true
-              },
-              modes: {
-                push: { quantity: 3 },
-                repulse: { distance: 100, duration: 0.4 }
-              }
-            },
-            detectRetina: true
-          };
-
-          if (theme === "playful") {
-            return Object.assign({}, base, {
-              particles: {
-                number: { value: 80, density: { enable: true, area: 800 } },
-                color: { value: ["#0d6efd", "#6610f2", "#20c997", "#f8d210"] },
-                links: {
-                  enable: true,
-                  distance: 140,
-                  color: "#9ca3af",
-                  opacity: 0.5,
-                  width: 1
-                },
-                move: {
-                  enable: true,
-                   speed: 1.8,
-                  direction: "none",
-                  random: true,
-                  outModes: { default: "bounce" }
-                },
-                opacity: { value: 0.7 },
-                size: { value: { min: 1, max: 5 } },
-                shape: { type: ["circle", "triangle"] }
-              }
-            });
-          }
-
-          if (theme === "minimal") {
-            return Object.assign({}, base, {
-              particles: {
-                number: { value: 35, density: { enable: true, area: 1000 } },
-                color: { value: "#6b7280" },
-                links: {
-                  enable: true,
-                  distance: 160,
-                  color: "#4b5563",
-                  opacity: 0.35,
-                  width: 0.7
-                },
-                move: {
-                  enable: true,
-                  speed: 0.8,
-                  direction: "none",
-                  random: true,
-                  outModes: { default: "out" }
-                },
-                opacity: { value: 0.4 },
-                size: { value: { min: 1, max: 3 } },
-                shape: { type: "circle" }
-              }
-            });
-          }
-
-          // Calm (default)
-          return Object.assign({}, base, {
-            particles: {
-              number: { value: 60, density: { enable: true, area: 900 } },
-              color: { value: ["#0d6efd", "#6610f2", "#20c997"] },
-              links: {
-                enable: true,
-                distance: 130,
-                color: "#6c757d",
-                opacity: 0.45,
-                width: 1
-              },
-              move: {
-                enable: true,
-                speed: 1.2,
-                direction: "none",
-                random: true,
-                outModes: { default: "bounce" }
-              },
-              opacity: { value: 0.5 },
-              size: { value: { min: 1, max: 4 } },
-              shape: { type: "circle" }
-            }
-          });
-        }
-
-        let currentTheme = "calm";
-        if (window.tsParticles) {
-          tsParticles.load("tsparticles", getParticlesConfig(currentTheme));
-        }
-
-        const particleThemeButtons = document.querySelectorAll(".particles-toggle .pill");
-        particleThemeButtons.forEach(btn => {
-          btn.addEventListener("click", () => {
-            const theme = btn.getAttribute("data-theme") || "calm";
-            currentTheme = theme;
-            particleThemeButtons.forEach(b => b.classList.remove("pill--active"));
-            btn.classList.add("pill--active");
-            if (window.tsParticles) {
-              tsParticles.load("tsparticles", getParticlesConfig(currentTheme));
-            }
-          });
-        });
-
-        // Smooth scroll
         function smoothScrollTo(targetId) {
           const target = document.getElementById(targetId);
           if (!target) return;
-          const offsetTop = target.offsetTop - 70;
-          window.scrollTo({ top: offsetTop, behavior: "smooth" });
+          window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
         }
-
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener("click", evt => {
             const targetId = anchor.getAttribute("href").substring(1);
@@ -634,71 +327,51 @@
           });
         });
 
-        // Side nav dots
         const sections = document.querySelectorAll("section[data-section-id]");
         const dots = document.querySelectorAll(".side-nav__dot");
-
-        dots.forEach(dot => {
-          dot.addEventListener("click", () => {
-            const target = dot.getAttribute("data-target");
-            if (target) smoothScrollTo(target);
+        dots.forEach(dot => dot.addEventListener("click", () => smoothScrollTo(dot.getAttribute("data-target"))));
+        const sectionObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("data-section-id");
+              dots.forEach(dot => dot.classList.toggle("side-nav__dot--active", dot.getAttribute("data-target") === id));
+            }
           });
-        });
-
-        const sectionObserver = new IntersectionObserver(
-          entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                const id = entry.target.getAttribute("data-section-id");
-                dots.forEach(dot => {
-                  dot.classList.toggle("side-nav__dot--active", dot.getAttribute("data-target") === id);
-                });
-              }
-            });
-          },
-          { threshold: 0.4 }
-        );
-
+        }, { threshold: 0.4 });
         sections.forEach(sec => sectionObserver.observe(sec));
 
-        // Lightbox for gallery
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightboxImg");
-        const galleryCards = document.querySelectorAll(".gallery-card");
+        function getParticlesConfig(theme) {
+          const base = { fullScreen: { enable: true, zIndex: -1 }, background: { color: "#050816" }, fpsLimit: 60, detectRetina: true };
+          const presets = {
+            playful: { number: 80, speed: 1.8, color: ["#0d6efd", "#6610f2", "#20c997", "#f8d210"] },
+            minimal: { number: 35, speed: 0.8, color: "#6b7280" },
+            calm: { number: 60, speed: 1.2, color: ["#0d6efd", "#6610f2", "#20c997"] }
+          };
+          const p = presets[theme] || presets.calm;
+          return Object.assign({}, base, {
+            particles: {
+              number: { value: p.number, density: { enable: true, area: 900 } },
+              color: { value: p.color },
+              links: { enable: true, distance: 130, color: "#6c757d", opacity: 0.42, width: 1 },
+              move: { enable: true, speed: p.speed, direction: "none", random: true, outModes: { default: "bounce" } },
+              opacity: { value: 0.5 },
+              size: { value: { min: 1, max: 4 } },
+              shape: { type: "circle" }
+            },
+            interactivity: { events: { onHover: { enable: true, mode: "grab" }, onClick: { enable: true, mode: "push" }, resize: true }, modes: { push: { quantity: 3 } } }
+          });
+        }
 
-        galleryCards.forEach(card => {
-          card.addEventListener("click", () => {
-            const img = card.querySelector("img");
-            if (!img || !lightbox || !lightboxImg) return;
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt || "";
-            lightbox.classList.add("lightbox--visible");
-            lightbox.setAttribute("aria-hidden", "false");
+        let currentTheme = "calm";
+        if (window.tsParticles) tsParticles.load("tsparticles", getParticlesConfig(currentTheme));
+        document.querySelectorAll(".particles-toggle .pill").forEach(btn => {
+          btn.addEventListener("click", () => {
+            currentTheme = btn.getAttribute("data-theme") || "calm";
+            document.querySelectorAll(".particles-toggle .pill").forEach(b => b.classList.remove("pill--active"));
+            btn.classList.add("pill--active");
+            if (window.tsParticles) tsParticles.load("tsparticles", getParticlesConfig(currentTheme));
           });
         });
-
-        if (lightbox) {
-          lightbox.addEventListener("click", evt => {
-            if (evt.target === lightbox || evt.target.classList.contains("lightbox__close")) {
-              lightbox.classList.remove("lightbox--visible");
-              lightbox.setAttribute("aria-hidden", "true");
-            }
-          });
-        }
-
-        // Simple dropdown for downloads
-        const dropdownButton = document.querySelector(".dropdown-button");
-        const dropdownMenu = document.querySelector(".dropdown-menu");
-        if (dropdownButton && dropdownMenu) {
-          dropdownButton.addEventListener("click", () => {
-            dropdownMenu.classList.toggle("dropdown-menu--open");
-          });
-          document.addEventListener("click", evt => {
-            if (!dropdownButton.contains(evt.target) && !dropdownMenu.contains(evt.target)) {
-              dropdownMenu.classList.remove("dropdown-menu--open");
-            }
-          });
-        }
       });
     </script>
   </body>

@@ -1,217 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <%- include('../layouts/header'); %>
-  <title>CV - Aaliyah Hänni</title>
-</head>
-<body>
-  <%- include('../layouts/nav'); %>
-  <main>
-    <div class="container py-5">
-      <h1 class="mb-4">Curriculum Vitae - Aaliyah Hänni</h1>
+  <head>
+    <%- include('../layouts/header'); %>
+    <title>CV · Aaliyah Hänni</title>
+  </head>
 
-      <div class="row align-items-center mb-5">
-        <!-- Personal Info -->
-        <div class="col-md-8">
-          <h2>Aaliyah Hänni</h2>
-          <p><strong>Email:</strong> <a href="mailto:aaliyahhanni@gmail.com">aaliyahhanni@gmail.com</a></p>
-          <p><strong>Phone:</strong> 76 397 94 12</p>
-          <p><strong>Location:</strong> 3048 Wallisellen, Switzerland</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/" target="_blank">Aaliyah Hänni</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/aaliyahfiala42" target="_blank">aaliyahfiala42</a></p>
-          <p><strong>DOB:</strong> June 28, 1998 |
-             <strong>Nationality:</strong> USA |
-             <strong>Residence:</strong> Swiss B Permit</p>
-        </div>
+  <body class="page-body cv-page">
+    <%- include('../layouts/nav'); %>
 
-        <!-- Profile Photo -->
-        <div class="col-md-4 text-center">
-          <img src="/myphoto.jpg" alt="Aaliyah Hänni" class="img-fluid rounded-circle shadow" style="max-width: 180px;">
-        </div>
-      </div>
+    <main id="page-content">
+      <section class="section section--deep cv-hero-section">
+        <div class="section__inner cv-hero" data-aos="fade-up">
+          <div class="cv-hero__content">
+            <p class="small-label">Curriculum Vitae</p>
+            <h1 class="cv-hero__title">Aaliyah Hänni</h1>
+            <p class="cv-hero__subtitle">
+              Computer Science MSc student at <strong>Universität Bern</strong>, web developer, data scientist,
+              and IT business analyst building human-centered digital products in Switzerland.
+            </p>
 
-      <div class="text-end">
-        <div class="dropdown">
-          <button class="dropdown-button btn btn-outline-dark mt-3"><i class="fas fa-download me-2"></i> Download CV (PDF)</button>
-          <div class="dropdown-content">
-            <a href="/docs/CV.pdf" download>English</a>
-            <a href="/docs/Lebenslauf.pdf" download>Deutsch</a>
+            <div class="cv-badge-row" aria-label="Current profile highlights">
+              <span class="cv-badge cv-badge--primary"><i class="fas fa-graduation-cap"></i> MSc Computer Science · Universität Bern</span>
+              <span class="cv-badge"><i class="fas fa-location-dot"></i> Bern, Switzerland</span>
+              <span class="cv-badge"><i class="fas fa-id-card"></i> Swiss B Permit</span>
+              <span class="cv-badge"><i class="fas fa-globe"></i> English · German B2.2 · Spanish A2</span>
+            </div>
+
+            <div class="cv-hero__actions">
+              <a href="/docs/CV.pdf" class="button button--primary" download>
+                <i class="fas fa-download me-2"></i> Download CV
+              </a>
+              <a href="/portfolios" class="button button--outline-light">View portfolio</a>
+              <a href="mailto:aaliyahhanni@gmail.com" class="button button--ghost">Email me</a>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Summary -->
-      <section class="mb-5">
-        <h3>Professional Summary</h3>
-        <p>Creative and technically skilled Web Developer with hands-on experience in building user-friendly, visually appealing websites using modern web technologies. Passionate about delivering digital experiences that are both functional and beautifully designed. Background in IT and data-driven solutions with a strong ability to translate complex requirements into elegant interfaces. Known for a proactive, collaborative approach and thriving in startup environments.
-        </p>
+          <aside class="cv-hero__card" aria-label="Contact details">
+            <img src="/myphoto.jpg" alt="Aaliyah Hänni" class="cv-portrait" />
+            <div class="cv-contact-list">
+              <a href="mailto:aaliyahhanni@gmail.com"><i class="fas fa-envelope"></i> aaliyahhanni@gmail.com</a>
+              <a href="tel:+41763979412"><i class="fas fa-phone"></i> +41 76 397 94 12</a>
+              <a href="https://aaliyahhaenni.ch" target="_blank" rel="noopener"><i class="fas fa-link"></i> aaliyahhaenni.ch</a>
+              <a href="https://www.linkedin.com/in/aaliyah-h%C3%A4nni/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/aaliyahfiala42" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <div class="row">
-        <!-- Sidebar -->
-        <nav class="col-md-3 d-none d-md-block position-sticky" style="top: 100px;">
-          <ul class="nav flex-column timeline-nav">
-            <li class="nav-item"><a class="nav-link active" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
-          </ul>
-        </nav>
+      <section class="section section--light cv-main-section">
+        <div class="section__inner cv-layout">
+          <aside class="cv-sidebar" aria-label="CV sections">
+            <nav class="cv-toc">
+              <p class="cv-toc__title">CV Sections</p>
+              <a href="#profile">Profile</a>
+              <a href="#competencies">Core competencies</a>
+              <a href="#education">Education</a>
+              <a href="#experience">Experience</a>
+              <a href="#volunteer">Volunteer &amp; leadership</a>
+              <a href="#projects">Projects</a>
+              <a href="#skills">Technical skills</a>
+              <a href="#languages">Languages</a>
+            </nav>
+          </aside>
 
-        <!-- Main Content -->
-        <div class="col-md-9">
-          <!-- Experience -->
-          <section id="experience" class="mb-5">
-            <h3>Professional Experience</h3>
+          <div class="cv-content">
+            <section id="profile" class="cv-section" data-aos="fade-up">
+              <h2>Professional Profile</h2>
+              <p>
+                Computer Science master’s student, web developer, data scientist, and IT business analyst with
+                experience across software development, data analytics, machine learning, business systems, web
+                platforms, and digital product design. Skilled in developing scalable websites and applications,
+                managing technical projects, translating business needs into functional requirements, and creating
+                data-driven solutions for operational decision-making.
+              </p>
+              <p>
+                Experienced in front-end and back-end development, WordPress and Node.js platforms, API integrations,
+                e-commerce systems, payment integrations, SEO, server and domain administration, dashboard design,
+                reporting automation, machine learning, and technical stakeholder communication.
+              </p>
+            </section>
 
-            <div class="timeline-block">
-              <div class="timeline-date">October 2022 – Present</div>
-              <div class="timeline-content">
-                <h5>Volunteer Web Developer</h5>
-                <p class="text-muted">Sarah Zuber Foundation & Cowlitz Soccer Association (Remote)</p>
-                <ul>
-                  <li>Designed and developed full-stack websites using Node.js, MongoDB, HTML/CSS, and JavaScript</li>
-                  <li>Built responsive, user-friendly UIs for educational and sports program promotion</li>
-                  <li>Implemented backend APIs for form submissions and content management</li>
-                  <li>Worked independently with nonprofit stakeholders to meet tight deadlines and evolving requirements</li>
-                </ul>
+            <section id="competencies" class="cv-section" data-aos="fade-up">
+              <h2>Core Competencies</h2>
+              <div class="cv-card-grid cv-card-grid--two">
+                <article class="cv-info-card">
+                  <h3>Software &amp; Web Development</h3>
+                  <p>Full-stack web development, Node.js, WordPress, JavaScript, HTML, CSS, APIs, authentication, e-commerce, mobile optimization, security, and cron jobs.</p>
+                </article>
+                <article class="cv-info-card">
+                  <h3>Data Science &amp; Analytics</h3>
+                  <p>Python, R, SQL, statistical analysis, machine learning, predictive modeling, data mining, Tableau dashboards, and reporting automation.</p>
+                </article>
+                <article class="cv-info-card">
+                  <h3>Business Analysis</h3>
+                  <p>Requirements gathering, workflow design, documentation, software implementation, stakeholder communication, training, and project coordination.</p>
+                </article>
+                <article class="cv-info-card">
+                  <h3>Design &amp; Marketing Technology</h3>
+                  <p>UX/UI design, Adobe Suite, logo design, content creation, video editing, SEO, Google Search Console, Google Ads, and Google Merchant Center.</p>
+                </article>
               </div>
-            </div>
+            </section>
 
-            <div class="timeline-block">
-              <div class="timeline-date">April 2019 – June 2022</div>
-              <div class="timeline-content">
-                <h5>IT Business Analyst</h5>
-                <p class="text-muted">JH Kelly, Seattle</p>
-                <ul>
-                  <li>Designed and launched a new company intranet, improving internal communication and resource accessibility across departments</li>
-                  <li>Developed an external-facing Jira Service Desk portal for IT ticketing and client communications, streamlining issue tracking and resolution workflows</li>
-                  <li>Collaborated with stakeholders to gather UI/UX requirements and translated them into functional web interfaces and interactive dashboards</li>
-                  <li>Created user flow diagrams, wireframes, and documentation in Confluence to guide development and training</li>
-                  <li>Deployed a DocuSign-integrated digital signature system reducing legal turnaround time by 70%</li>
-                  <li>Built over 100+ custom dashboards in Power BI and Tableau, with focus on user-friendly design and accessibility</li>
-                </ul>
+            <section id="education" class="cv-section" data-aos="fade-up">
+              <h2>Education</h2>
+              <div class="cv-timeline">
+                <article class="cv-timeline-item cv-timeline-item--highlight">
+                  <div class="cv-timeline-date">Sep 2025 – Present</div>
+                  <div class="cv-timeline-body">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p class="cv-muted">Universität Bern, Bern, Switzerland</p>
+                    <p><strong>Current student focus:</strong> computer science, software systems, algorithms, and applied technical problem-solving in Switzerland.</p>
+                  </div>
+                </article>
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">Completed Jun 2022</div>
+                  <div class="cv-timeline-body">
+                    <h3>Master of Science in Data Science</h3>
+                    <p class="cv-muted">University of Washington, Seattle, WA, United States</p>
+                  </div>
+                </article>
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">Completed Dec 2019</div>
+                  <div class="cv-timeline-body">
+                    <h3>Bachelor of Science in Mathematics</h3>
+                    <p class="cv-muted">Oregon State University, Corvallis, OR, United States</p>
+                    <p>Minors: Computer Science and Statistics</p>
+                  </div>
+                </article>
               </div>
-            </div>
+            </section>
 
-            <div class="timeline-block">
-              <div class="timeline-date">September 2021 – September 2022</div>
-              <div class="timeline-content">
-                <h5>Data Scientist Intern</h5>
-                <p class="text-muted">University of Washington, Seattle</p>
-                <ul>
-                  <li>Developed a machine learning model to identify high-risk students, enabling timely interventions across departments</li>
-                  <li>Built NLP models to flag inappropriate content from over 3.5 million course reviews</li>
-                  <li>Collaborated cross-functionally to build scalable data pipelines for ongoing academic insights</li>
-                </ul>
+            <section id="experience" class="cv-section" data-aos="fade-up">
+              <h2>Professional Experience</h2>
+              <div class="cv-timeline">
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">Sep 2025 – Present</div>
+                  <div class="cv-timeline-body">
+                    <h3>Lead Designer &amp; Developer</h3>
+                    <p class="cv-muted">Swizzzy, Switzerland</p>
+                    <ul>
+                      <li>Lead the design and development of Swizzzy, a Swiss business directory helping users discover, explore, and connect with businesses across Switzerland.</li>
+                      <li>Define product direction, platform structure, UX, front-end implementation, and scalable interface patterns.</li>
+                      <li>Build a clean, intuitive, and trustworthy local discovery experience tailored to the Swiss market.</li>
+                    </ul>
+                    <a href="https://www.swizzzy.ch/" class="cv-project-link" target="_blank" rel="noopener">Visit Swizzzy <i class="fas fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                </article>
+
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">May 2025 – Present</div>
+                  <div class="cv-timeline-body">
+                    <h3>Web Developer</h3>
+                    <p class="cv-muted">Ridah’s Soulutions GmbH, Switzerland</p>
+                    <ul>
+                      <li>Serve as lead developer and designer for more than 60 websites and digital projects.</li>
+                      <li>Create and maintain Node.js and WordPress websites, e-commerce systems, API integrations, custom checkout flows, and webhook-based automations.</li>
+                      <li>Configure Hostpoint servers, domains, SSL certificates, custom emails, Cloudflare security, cron jobs, and user authentication workflows.</li>
+                      <li>Manage SEO and marketing technology including Google Search Console, Google Ads, and Google Merchant Center.</li>
+                      <li>Create logos, visual assets, videos, and optimized mobile-ready content using Adobe Suite.</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">Apr 2019 – Jun 2022</div>
+                  <div class="cv-timeline-body">
+                    <h3>IT Business Analyst</h3>
+                    <p class="cv-muted">JH Kelly, Longview, WA, United States</p>
+                    <ul>
+                      <li>Led developers, testers, and analysts through the development of a new module for internally created project management software.</li>
+                      <li>Gathered and documented requirements, workflows, data needs, implementation plans, project proposals, and training materials.</li>
+                      <li>Designed more than 50 Tableau dashboards and created more than 100 reports using SAS Report Builder and SAP Crystal Reports.</li>
+                      <li>Developed and supported internal applications including the company intranet and operational tools for ticketing, equipment requests, communication, and metrics tracking.</li>
+                      <li>Presented software demonstrations and training sessions to senior managers, team leaders, interns, and IT staff.</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="cv-timeline-item">
+                  <div class="cv-timeline-date">Sep 2021 – Present</div>
+                  <div class="cv-timeline-body">
+                    <h3>Data Science Intern</h3>
+                    <p class="cv-muted">University of Washington, Seattle, WA, United States</p>
+                    <ul>
+                      <li>Analyze, aggregate, and summarize learning management system, demographic, and survey datasets.</li>
+                      <li>Apply data mining, statistical analysis, and machine learning techniques to support data-driven academic decision-making.</li>
+                      <li>Develop a student risk prediction model and collaborate on a course recommendation algorithm using historical academic data.</li>
+                    </ul>
+                  </div>
+                </article>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <hr>
-
-          <!-- Education -->
-          <section id="education" class="mb-5">
-            <h3>Education</h3>
-
-            <div class="timeline-block">
-              <div class="timeline-date">June 2022</div>
-              <div class="timeline-content">
-                <h5>MSc in Data Science</h5>
-                <p class="text-muted">University of Washington, Seattle, WA, USA</p>
+            <section id="volunteer" class="cv-section" data-aos="fade-up">
+              <h2>Volunteer Experience &amp; Leadership</h2>
+              <div class="cv-card-grid">
+                <article class="cv-info-card">
+                  <h3>IT and Website Advisor · Compassionate Connections</h3>
+                  <p>Provide IT, website, accessibility, design, and coordination support for small businesses and community organizations.</p>
+                  <div class="cv-link-row">
+                    <a href="https://sarahzubermemorial.org/" target="_blank" rel="noopener">Sarah Zuber Memorial</a>
+                    <a href="https://cowlitzyouthsoccer.org/" target="_blank" rel="noopener">Cowlitz Youth Soccer</a>
+                    <a href="https://curiouslittlefrog.com/" target="_blank" rel="noopener">Curious Little Frog</a>
+                    <a href="https://www.pdxcaa.com/" target="_blank" rel="noopener">PDXCAA</a>
+                  </div>
+                </article>
+                <article class="cv-info-card">
+                  <h3>Data Lead · OneCourt</h3>
+                  <p>Develop machine learning models to track sports data in real time and translate key details into haptic language for accessible sports experiences.</p>
+                </article>
+                <article class="cv-info-card">
+                  <h3>VP of Relations · SEBA</h3>
+                  <p>Represented the Science &amp; Engineering Business Association to external partners and helped organize the Science and Technology Showcase.</p>
+                </article>
+                <article class="cv-info-card">
+                  <h3>Mentorship &amp; Outreach</h3>
+                  <p>Led peer mentoring, STEM outreach, and leadership activities through OSU, the Math Circus Project, Ford Scholarship mentoring, and NSLS.</p>
+                </article>
               </div>
-            </div>
+            </section>
 
-            <div class="timeline-block">
-              <div class="timeline-date">December 2019</div>
-              <div class="timeline-content">
-                <h5>BSc in Mathematics</h5>
-                <p class="text-muted">Oregon State University, Corvallis, OR, USA</p>
-                <p>Minors: Computer Science & Statistics</p>
+            <section id="projects" class="cv-section" data-aos="fade-up">
+              <h2>Selected Projects</h2>
+              <div class="cv-project-grid">
+                <article class="cv-project-card cv-project-card--featured">
+                  <h3>Swizzzy · Swiss Business Directory</h3>
+                  <p>Designed and developed a Swiss business directory focused on local business discovery, city/category search, business profiles, UX clarity, and local SEO visibility.</p>
+                  <a href="https://www.swizzzy.ch/" target="_blank" rel="noopener">Open project</a>
+                </article>
+                <article class="cv-project-card cv-project-card--featured">
+                  <h3>Ant Colony Optimization on Swiss Trails</h3>
+                  <p>Built a web application applying ant colony optimization to Swiss trail route analysis using Swiss public data/API functionality.</p>
+                  <a href="http://ant.aaliyahhaenni.ch/" target="_blank" rel="noopener">Open web app</a>
+                </article>
+                <article class="cv-project-card">
+                  <h3>OneCourt Sports Data &amp; Haptics</h3>
+                  <p>Developed machine learning models for real-time sports tracking and helped translate live game data into accessible haptic feedback.</p>
+                  <a href="https://github.com/aaliyahfiala42/OneCourt" target="_blank" rel="noopener">View GitHub</a>
+                </article>
+                <article class="cv-project-card">
+                  <h3>AI Fashion · GAN Textile Patterns</h3>
+                  <p>Applied generative adversarial networks to textile pattern generation and built a platform to test AI-generated patterns on fashion items.</p>
+                  <a href="https://github.com/liemluong/Neural_Network_Art" target="_blank" rel="noopener">View GitHub</a>
+                </article>
+                <article class="cv-project-card">
+                  <h3>Brain Tumor Recognition</h3>
+                  <p>Built a TensorFlow/Keras CNN web application for classifying 2D MRI brain scans as tumorous or non-tumorous.</p>
+                </article>
+                <article class="cv-project-card">
+                  <h3>Undergraduate Mathematics Research</h3>
+                  <p>Researched a new method for generating Euler’s phi function using Sturmian words, with findings referenced in the Encyclopedia of Natural Numbers.</p>
+                </article>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <hr>
+            <section id="awards" class="cv-section" data-aos="fade-up">
+              <h2>Awards &amp; Recognition</h2>
+              <ul class="cv-simple-list">
+                <li>National Society of Leadership and Success Induction, 2018</li>
+                <li>Oregon State Representative of the National Academy of Future Physicians and Medical Scientists, 2016</li>
+              </ul>
+            </section>
 
-          <!-- Projects -->
-          <section id="projects" class="mb-5">
-            <h3>Projects</h3>
-            <div class="timeline-block">
-              <div class="timeline-content">
-                <h5>Fashion AI Web App</h5>
-                <p class="text-muted">Django, AWS</p>
-                <ul>
-                  <li>Created a web platform to showcase AI-generated fashion patterns using a GAN model</li>
-                  <li>Integrated model predictions into a clean, modern web UI</li>
-                  <li>Designed site layout and handled cloud deployment</li>
-                  <li>Presented to Microsoft AI team</li>
-                </ul>
+            <section id="skills" class="cv-section" data-aos="fade-up">
+              <h2>Technical Skills</h2>
+              <div class="cv-skill-cloud">
+                <div><strong>Programming:</strong> Python, R, C, C++, HTML, CSS, JavaScript, SQL</div>
+                <div><strong>Additional:</strong> MATLAB, Mathematica, LaTeX, Git, MASM Assembly, Qiskit</div>
+                <div><strong>Web:</strong> Node.js, WordPress, Flask, API integrations, webhooks, authentication, SEO, Cloudflare, Hostpoint</div>
+                <div><strong>Data:</strong> Machine learning, statistics, predictive modeling, recommendation systems, CNNs, GANs, Tableau, SAS, SAP Crystal Reports</div>
+                <div><strong>Tools:</strong> MS Office, Visual Studio, SQL Studio, PyCharm, Jupyter, Google Colab, GitHub, Adobe Suite, Google Search Console, Google Ads, Google Merchant Center</div>
+                <div><strong>Operating systems:</strong> Linux, Windows, macOS</div>
               </div>
-            </div>
+            </section>
 
-            <div class="timeline-block">
-              <div class="timeline-content">
-                <h5>OneCourt (UW Dempsey Startup Winner) </h5>
-                <p class="text-muted">Real-time Sports Data UI</p>
-                <ul>
-                  <li>Developed an interactive front-end interface for visually impaired users</li>
-                  <li>Translated real-time sports data into haptic feedback & visual cues
-                  </li>
-                  <li>Led front-end logic and user interaction flow
-                  </li>
-                </ul>
+            <section id="languages" class="cv-section" data-aos="fade-up">
+              <h2>Languages</h2>
+              <div class="cv-language-row">
+                <span><strong>English</strong> · Native</span>
+                <span><strong>German</strong> · B2.2</span>
+                <span><strong>Spanish</strong> · A2</span>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <hr>
-
-          <!-- Skills -->
-          <section id="skills" class="mb-5">
-            <h3>Technical Skills</h3>
-            <div class="timeline-block">
-              <div class="timeline-content">
-            <ul class="list-group list-group-flush mb-3">
-              <li class="list-group-item"><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, WordPress</li>
-              <li class="list-group-item"><strong>Backend:</strong> Node.js, Django, MongoDB, REST APIs</li>
-              <li class="list-group-item"><strong>Tools:</strong> GitHub, Azure, Jira, Confluence</li>
-              <li class="list-group-item"><strong>Languages:</strong> English (Native), German (B2)</li>
-            </ul>
+            <section class="cv-section cv-cta" data-aos="fade-up">
+              <h2>Application Focus Areas</h2>
+              <p>
+                Software Developer · Web Developer · Front-End Developer · Full-Stack Developer · Data Scientist ·
+                Machine Learning Engineer · Data Analyst · IT Business Analyst · Product Designer/Developer · UX/UI-Oriented Web Developer
+              </p>
+              <div class="cv-hero__actions">
+                <a href="/contact" class="button button--primary">Contact me</a>
+                <a href="/portfolios" class="button button--outline">See project work</a>
               </div>
-            </div>
-          </section>
-
-          <hr>
-
-          <!-- Motivation -->
-          <section id="motivation" class="mb-5">
-            <div class="timeline-block">
-              <div class="timeline-content">
-            <h3>Why Ridah’s Soulutions?</h3>
-            <ul>
-              <li>Passionate about clean, modern web design and eager to co-create digital experiences in a collaborative, dynamic team</li>
-              <li>Proven ability to learn quickly, adapt to client needs, and deliver quality websites with both aesthetic and functional appeal</li>
-              <li>Excited by the startup culture and opportunity to contribute creatively while learning and growing</li>
-            </ul>
-              </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
-    </div>
-  </main>
+      </section>
+    </main>
 
-  <%- include('../layouts/footer'); %>
+    <%- include('../layouts/footer'); %>
 
-  <script>
-    document.querySelectorAll('.timeline-nav .nav-link').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href'))
-          .scrollIntoView({ behavior: 'smooth', block: 'start' });
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".cv-toc a").forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            const target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            window.scrollTo({ top: target.offsetTop - 90, behavior: "smooth" });
+          });
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
