@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 const mailgunTransport = require("nodemailer-mailgun-transport");
 
 const app = express();
-const port = process.env.PORT || 3010;
+const port =  3010;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -61,6 +61,6 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(port,'127.0.0.1', () => {
   console.log(`Website live on port ${port}`);
 });
