@@ -2071,3 +2071,60 @@ body {
     padding: 1rem;
   }
 }
+
+
+
+/* Prevent horizontal overflow on mobile */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make sizing predictable */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent media from exceeding screen width */
+img,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wrap long text, URLs, and code */
+p,
+li,
+a,
+span,
+code,
+pre {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Safer code blocks */
+pre {
+  white-space: pre-wrap;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Avoid elements using 100vw causing scrollbar overflow */
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Responsive containers */
+.container {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-inline: 16px;
+}
